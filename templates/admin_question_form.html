@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Edit' if editing else 'Add' }} question · Admin{% endblock %}
+{% block content %}
+<p><a href="{{ url_for('admin.questions') }}">&larr; Questions</a></p>
+<h1>{{ 'Edit question' if editing else 'Add question' }}</h1>
+
+<form class="card admin-form" method="post">
+  {{ csrf_field() }}
+  <label>Topic
+    <select name="topic_id">
+      <option value="">Choose a topic</option>
+      {% for t in topics %}<option value="{{ t.id }}" {{ 'selected' if q.topic_id|string == t.id|string }}>{{ t.name }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>…or a new topic <input name="new_topic" value="{{ q.new_topic or '' }}" placeholder="Leave empty to use the topic above"></label>
+  <label>Category <input name="category" value="{{ q.category or '' }}" placeholder="e.g. Loops, Collections"></label>
+  <label>Difficulty
+    <select name="difficulty">
+      {% for d in difficulties %}<option value="{{ d }}" {{ 'selected' if q.difficulty == d }}>{{ d | capitalize }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Question <textarea name="text" rows="3" required>{{ q.text or '' }}</textarea></label>
+
+  <p class="muted">Options (tick the correct one):</p>
+  {% for key in ['a', 'b', 'c', 'd'] %}
+  <div class="option-row">
+    <input type="radio" name="correct" value="{{ key }}" {{ 'checked' if q.correct == key }} aria-label="Option {{ key }} is correct">
+    <input name="option_{{ key }}" value="{{ q['option_' ~ key] or '' }}" placeholder="Option {{ key | upper }}" required>
+  </div>
+  {% endfor %}
+  <button class="btn">Save question</button>
+</form>
+{% endblock %}

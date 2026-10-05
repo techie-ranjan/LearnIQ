@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Dashboard · LearnIQ{% endblock %}
+{% block content %}
+<h1>Your progress</h1>
+
+{% if not stats %}
+  <div class="card"><p>No data yet. Take a quiz and your progress will show up here.</p>
+  <a class="btn" href="{{ url_for('topics') }}">Start a quiz</a></div>
+{% else %}
+
+<div class="stats">
+  <div class="card stat"><b>{{ quizzes }}</b><span>Quizzes taken</span></div>
+  <div class="card stat"><b>{{ answered }}</b><span>Questions answered</span></div>
+  <div class="card stat"><b>{{ accuracy }}%</b><span>Overall accuracy</span></div>
+</div>
+
+<h2>Focus on these</h2>
+{% if weak %}
+  {% for s in weak %}
+  <div class="card focus">
+    <div>
+      <b>{{ s.topic }} · {{ s.category }}</b>
+      <p class="muted">{{ s.accuracy }}% accuracy over {{ s.answered }} answers</p>
+    </div>
+    <a class="btn" href="{{ url_for('quiz', topic_id=s.topic_id, category=s.category) }}">Practice</a>
+  </div>
+  {% endfor %}
+{% else %}
+  <p class="muted">No weak areas right now. Categories need at least 3 answers before they are judged.</p>
+{% endif %}
+
+{% if revise %}
+<p class="muted">Revision quiz for a whole language:
+  {% for id, name in revise.items() %}
+  <a class="btn small" href="{{ url_for('quiz', topic_id=id, level='weak') }}">{{ name }}</a>
+  {% endfor %}
+</p>
+{% endif %}
+
+<h2>By language</h2>
+<div class="card">
+  {% for l in languages %}
+  <div class="bar-row">
+    <span class="bar-name">{{ l.name }}</span>
+    <div class="bar"><div style="width: {{ l.accuracy }}%"></div></div>
+    <span class="bar-val">{{ l.accuracy }}%</span>
+  </div>
+  {% endfor %}
+</div>
+
+<h2>Last {{ trend | length }} quizzes</h2>
+<div class="card trend">
+  {% for t in trend %}
+  <div class="t-col" title="{{ t.topic }}: {{ t.accuracy }}%">
+    <div class="t-bar" style="height: {{ t.accuracy }}%"></div>
+    <small>{{ t.accuracy }}</small>
+  </div>
+  {% endfor %}
+</div>
+
+<h2>All categories</h2>
+<div class="card table-wrap">
+  <table>
+    <tr><th>Topic</th><th>Category</th><th>Accuracy</th><th>Status</th></tr>
+    {% for s in stats %}
+    <tr>
+      <td>{{ s.topic }}</td>
+      <td>{{ s.category }}</td>
+      <td>{{ s.accuracy }}% <span class="muted">({{ s.correct }}/{{ s.answered }})</span></td>
+      <td><span class="badge {{ s.status | lower }}">{{ s.status }}</span></td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endif %}
+{% endblock %}

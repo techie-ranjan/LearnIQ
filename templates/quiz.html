@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}{{ topic.name }} Quiz · LearnIQ{% endblock %}
+{% block content %}
+<div class="quiz-head">
+  <h1>{{ topic.name }} Quiz <span class="chip">{{ label }}</span></h1>
+  {% if note %}<p class="muted note">{{ note }}</p>{% endif %}
+  {% if questions %}
+  <div class="progress-wrap">
+    <div class="progress"><div id="bar"></div></div>
+    <small id="count" class="muted">0 / {{ questions | length }} answered</small>
+  </div>
+  {% endif %}
+</div>
+
+{% if not questions %}
+  <div class="card"><p>No questions found for this level yet.</p>
+  <a class="btn" href="{{ url_for('topics') }}">Back</a></div>
+{% else %}
+<form method="post">
+  {{ csrf_field() }}
+  <input type="hidden" name="qids" value="{{ questions | map(attribute='id') | join(',') }}">
+  {% for q in questions %}
+  <fieldset class="card question">
+    <legend>Question {{ loop.index }}</legend>
+    <p class="q-text">{{ q.text }}</p>
+    <p class="tags"><span class="chip">{{ q.category }}</span> <span class="chip light">{{ q.difficulty | capitalize }}</span></p>
+    {% for key in ['a', 'b', 'c', 'd'] %}
+    <label class="option">
+      <input type="radio" name="q{{ q.id }}" value="{{ key }}">
+      <span><b>{{ key | upper }}</b> {{ q['option_' ~ key] }}</span>
+    </label>
+    {% endfor %}
+  </fieldset>
+  {% endfor %}
+  <button class="btn big">Submit quiz</button>
+</form>
+
+<script>
+  const total = {{ questions | length }};
+  const bar = document.getElementById('bar');
+  const count = document.getElementById('count');
+  document.querySelectorAll('input[type=radio]').forEach(function (radio) {
+    radio.addEventListener('change', function () {
+      const done = new Set(Array.from(document.querySelectorAll('input[type=radio]:checked'))
+                                .map(function (i) { return i.name; })).size;
+      bar.style.width = (100 * done / total) + '%';
+      count.textContent = done + ' / ' + total + ' answered';
+    });
+  });
+</script>
+{% endif %}
+{% endblock %}

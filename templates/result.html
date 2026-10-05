@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Result · LearnIQ{% endblock %}
+{% block content %}
+<section class="card result-top {{ status | lower }}">
+  <div class="ring" style="--p: {{ accuracy }}"><span>{{ accuracy }}%</span></div>
+  <div>
+    <h1>{{ attempt.topic }} Result</h1>
+    <p class="big-score">{{ attempt.score }} / {{ attempt.total }} correct</p>
+    <span class="badge {{ status | lower }}">{{ status }}</span>
+  </div>
+</section>
+
+<div class="actions">
+  <a class="btn" href="{{ url_for('quiz', topic_id=attempt.topic_id) }}">Try again</a>
+  <a class="btn ghost" href="{{ url_for('topics') }}">Other topics</a>
+</div>
+
+<h2>Review your answers</h2>
+{% for a in answers %}
+<div class="card review {{ 'right' if a.is_correct else 'wrong' }}" id="q{{ a.id }}">
+  <p class="q-text">{{ '✓' if a.is_correct else '✗' }} {{ loop.index }}. {{ a.text }}</p>
+  <p class="tags"><span class="chip">{{ a.category }}</span> <span class="chip light">{{ a.difficulty | capitalize }}</span></p>
+  <p><span class="label">Your answer:</span> {{ a['option_' ~ a.selected] if a.selected else 'Not answered' }}</p>
+  {% if not a.is_correct %}
+  <p><span class="label good">Correct answer:</span> {{ a['option_' ~ a.correct] }}</p>
+  {% if a.explanation %}
+  <div class="ai-box"><b>AI explanation</b><p>{{ a.explanation }}</p></div>
+  {% else %}
+  <form method="post" action="{{ url_for('explain_answer', attempt_id=attempt.id, question_id=a.id) }}"
+        onsubmit="this.querySelector('button').textContent = 'Thinking...'">
+    {{ csrf_field() }}
+    <button class="btn ghost small">Explain with AI</button>
+  </form>
+  {% endif %}
+  {% endif %}
+</div>
+{% endfor %}
+{% endblock %}

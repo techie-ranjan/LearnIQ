@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Register · LearnIQ{% endblock %}
+{% block content %}
+<div class="auth">
+  <h1>Create your account</h1>
+  <p class="muted">Your quiz history is saved to your account.</p>
+  <form method="post">
+  {{ csrf_field() }}
+    <label>Name <input name="name" placeholder="Your name" required autofocus></label>
+    <label>Email <input type="email" name="email" placeholder="you@example.com" required></label>
+    <label>Password <input type="password" name="password" placeholder="At least 6 characters" required></label>
+    <button class="btn">Register</button>
+  </form>
+  <p class="muted center">Already registered? <a href="{{ url_for('login') }}">Login</a></p>
+</div>
+{% endblock %}

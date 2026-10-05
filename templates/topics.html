@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Hi, {{ session.name }} 👋</h1>
+  <p>Pick a language, choose a level and start a 10-question quiz.</p>
+</section>
+
+<div class="grid">
+  {% set colors = ['#4f46e5', '#0891b2', '#16a34a', '#d97706', '#db2777', '#7c3aed', '#dc2626'] %}
+  {% for t in topics %}
+  <form class="card topic" action="{{ url_for('quiz', topic_id=t.id) }}" method="get"
+        style="--accent: {{ colors[loop.index0 % colors|length] }}">
+    <h3>{{ t.name }}</h3>
+    <p class="muted">{{ t.total }} questions</p>
+    <select name="level" aria-label="Difficulty level">
+      <option value="adaptive">Adaptive (recommended)</option>
+      <option value="weak">Revise weak areas</option>
+      <option value="all">All levels</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+      <option value="interview">Interview</option>
+    </select>
+    <button class="btn">Start quiz</button>
+  </form>
+  {% endfor %}
+</div>
+
+<h2>Recent attempts</h2>
+{% if recent %}
+<div class="card table-wrap">
+  <table>
+    <tr><th>Topic</th><th>Score</th><th>Date</th><th></th></tr>
+    {% for a in recent %}
+    <tr>
+      <td>{{ a.topic }}</td>
+      <td>{{ a.score }} / {{ a.total }}</td>
+      <td class="muted">{{ a.taken }}</td>
+      <td><a href="{{ url_for('result', attempt_id=a.id) }}">View</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% else %}
+<p class="muted">No attempts yet. Take your first quiz above.</p>
+{% endif %}
+{% endblock %}

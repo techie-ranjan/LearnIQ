@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}LearnIQ{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="{{ url_for('topics') }}">Learn<span>IQ</span></a>
+    {% if session.user_id %}
+      <nav>
+        <a class="navlink" href="{{ url_for('topics') }}">Quizzes</a>
+        <a class="navlink" href="{{ url_for('dashboard') }}">Dashboard</a>
+        {% if is_admin %}<a class="navlink" href="{{ url_for('admin.home') }}">Admin</a>{% endif %}
+        <span class="who">{{ session.name }}</span>
+        <a class="btn-small" href="{{ url_for('logout') }}">Logout</a>
+      </nav>
+    {% endif %}
+  </header>
+
+  <main>
+    {% for msg in get_flashed_messages() %}<div class="flash">{{ msg }}</div>{% endfor %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>LearnIQ · Test. Analyze. Improve.</footer>
+</body>
+</html>

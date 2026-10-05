@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Questions · Admin{% endblock %}
+{% block content %}
+<p><a href="{{ url_for('admin.home') }}">&larr; Admin</a></p>
+<h1>Questions <span class="muted">({{ total }})</span></h1>
+
+<form class="card filters" method="get">
+  <select name="topic">
+    <option value="">All topics</option>
+    {% for t in topics %}<option value="{{ t.id }}" {{ 'selected' if filters.topic == t.id }}>{{ t.name }}</option>{% endfor %}
+  </select>
+  <select name="status">
+    {% for value, label in [('all', 'All'), ('active', 'Active'), ('hidden', 'Hidden')] %}
+    <option value="{{ value }}" {{ 'selected' if filters.status == value }}>{{ label }}</option>{% endfor %}
+  </select>
+  <input name="search" value="{{ filters.search }}" placeholder="Search question text">
+  <button class="btn small">Filter</button>
+  <a class="btn small" href="{{ url_for('admin.edit_question') }}">+ Add</a>
+</form>
+
+<div class="card table-wrap">
+  <table>
+    <tr><th>Question</th><th>Topic</th><th>Level</th><th></th></tr>
+    {% for r in rows %}
+    <tr class="{{ '' if r.active else 'hidden-row' }}">
+      <td>{{ r.text[:90] }}{{ '…' if r.text|length > 90 }}<br><span class="chip">{{ r.category }}</span></td>
+      <td>{{ r.topic }}</td>
+      <td>{{ r.difficulty | capitalize }}</td>
+      <td class="row-actions">
+        <a href="{{ url_for('admin.edit_question', question_id=r.id) }}">Edit</a>
+        <form method="post" action="{{ url_for('admin.toggle_question', question_id=r.id) }}">
+          {{ csrf_field() }}<button class="link-btn {{ '' if r.active else 'good' }}">{{ 'Hide' if r.active else 'Restore' }}</button>
+        </form>
+      </td>
+    </tr>
+    {% else %}
+    <tr><td colspan="4" class="muted">No questions match.</td></tr>
+    {% endfor %}
+  </table>
+</div>
+
+<div class="pager">
+  {% if page > 1 %}<a class="btn small ghost" href="{{ url_for('admin.questions', page=page-1, **filters) }}">&larr; Previous</a>{% endif %}
+  <span class="muted">Page {{ page }} of {{ pages }}</span>
+  {% if page < pages %}<a class="btn small ghost" href="{{ url_for('admin.questions', page=page+1, **filters) }}">Next &rarr;</a>{% endif %}
+</div>
+{% endblock %}

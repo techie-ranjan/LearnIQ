@@ -1,0 +1,1001 @@
+﻿id,language,difficulty,question_type,category,question,answer
+Q0001,C,Easy,Technical,Control Flow,Which statement is commonly used for a conditional branch?,if
+Q0002,C++,Hard,Technical,Concurrency,Why can a data race produce undefined behavior in C++?,The language memory model does not define the result of unsynchronized conflicting accesses.
+Q0003,C,Easy,Technical,Control Flow,"In C, which statement best answers: Which statement selects among multiple branches based on an expression?",switch
+Q0004,C,Medium,Technical,Strings,Why can strcpy() be dangerous?,It does not know the destination capacity and can overflow it if the source is too large.
+Q0005,HTML,Easy,Technical,Basics,Which element defines a table header cell?,The th element.
+Q0006,C++,Hard,Technical,Templates,"In C++, which statement best answers: What are concepts in C++20?",Compile-time constraints that specify requirements on template arguments.
+Q0007,CSS,Medium,Technical,Grid,What does grid-template-columns define?,The sizes and structure of grid columns.
+Q0008,Python,Medium,Technical,Functions,What is a keyword argument?,An argument supplied using the parameter name.
+Q0009,C,Interview,Interview,Interview,"In C, which statement best answers: Why are pointers powerful but risky in C?","They enable direct memory manipulation and efficient data structures, but invalid arithmetic, lifetime errors, and dereferences can cause undefined behavior."
+Q0010,CSS,Hard,Technical,Grid,"In CSS, which statement best answers: What is minmax() used for?",It defines a size range with a minimum and maximum track size in CSS Grid.
+Q0011,C++,Hard,Technical,Object Model,"In C++, which statement best answers: What is the Rule of Five?","If a class needs custom management for one of destructor, copy constructor, copy assignment, move constructor, or move assignment, it may need to explicitly manage all five."
+Q0012,C++,Medium,Technical,STL,What does std::vector::capacity() represent?,The number of elements the vector can hold in its allocated storage without reallocating.
+Q0013,C++,Medium,Technical,Memory,"In C++, which statement best answers: What is shared_ptr?","A smart pointer that uses shared ownership, typically with reference counting."
+Q0014,C,Hard,Technical,Advanced,Why can sizeof on an array differ from sizeof on a pointer?,"An array object has storage for all its elements, while a pointer object stores only an address."
+Q0015,Python,Medium,Technical,Functions,What is a lambda function?,A small anonymous function expression created with lambda.
+Q0016,HTML,Hard,Technical,Security,Why is escaping context-dependent?,"HTML text, HTML attributes, URLs, JavaScript, and CSS have different parsing rules and therefore require different safe encoding strategies."
+Q0017,JavaScript,Interview,Interview,Interview,How would you prevent XSS in a frontend application?,"Treat input as untrusted, avoid unsafe HTML injection, use context-appropriate encoding, sanitize when HTML is required, and enforce server-side controls."
+Q0018,Java,Hard,Technical,Advanced,"In Java, which statement best answers: What is try-with-resources?",A construct that automatically closes resources implementing AutoCloseable when leaving the try block.
+Q0019,C++,Interview,Interview,Interview,When would you choose shared_ptr?,When ownership genuinely needs to be shared among independent owners and a clear ownership model justifies the overhead.
+Q0020,C,Easy,Technical,Basics,Which operator dereferences a pointer?,The unary * operator.
+Q0021,C,Medium,Technical,Arrays,What does an array parameter such as int a[] become in a function parameter list?,It is adjusted to a pointer to int.
+Q0022,Java,Interview,Interview,Interview,Why use records in modern Java?,"Records provide concise syntax for transparent immutable data carriers with generated members such as accessors, equals, hashCode, and toString."
+Q0023,Python,Hard,Technical,Internals,"In Python, which statement best answers: What is garbage collection in Python?",Automatic memory management that primarily uses reference counting in CPython plus a cyclic garbage collector.
+Q0024,JavaScript,Hard,Technical,Memory,"In JavaScript, which statement best answers: What is garbage collection?",Automatic reclamation of memory for objects that are no longer reachable.
+Q0025,HTML,Medium,Technical,Forms,What is the label element used for?,"It associates a text label with a form control, improving usability and accessibility."
+Q0026,CSS,Medium,Technical,Grid,"In CSS, which statement best answers: What does grid-template-columns define?",The sizes and structure of grid columns.
+Q0027,CSS,Hard,Technical,Layout,What is a containing block?,A reference rectangle used for resolving the position and size of certain positioned or sized elements.
+Q0028,Python,Interview,Interview,Interview,How would you handle configuration securely?,"Keep secrets out of source code, use environment or secret-management mechanisms, validate configuration, and restrict access."
+Q0029,Python,Interview,Interview,Interview,Why write unit tests for Python functions?,"They provide fast, repeatable checks of expected behavior and make regressions easier to detect."
+Q0030,C++,Easy,Technical,Operators,Which operator accesses a member through a pointer?,->
+Q0031,JavaScript,Interview,Interview,Architecture,Why separate UI state from business logic?,"It reduces coupling and makes logic easier to test, reuse, and reason about."
+Q0032,C++,Hard,Technical,Move,"If std::move(x) is used, does it itself move x?",No; std::move is a cast that enables move operations to be selected; the actual move occurs in the operation using the resulting xvalue.
+Q0033,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: Why should user input be treated as untrusted?","Attackers can supply crafted data that may cause injection, logic errors, or security vulnerabilities if not validated and safely handled."
+Q0034,C++,Easy,Technical,Basics,What is a namespace?,A named scope used to organize identifiers and reduce name collisions.
+Q0035,C,Medium,Technical,Storage,What does static mean for a local variable?,"Its storage duration lasts for the entire program, while its block scope remains local."
+Q0036,C,Hard,Technical,Advanced,"In C, which statement best answers: What is a translation unit in C?","A source file after preprocessing, including included headers."
+Q0037,JavaScript,Medium,Technical,Modules,"In JavaScript, which statement best answers: What is an ES module?",A JavaScript module using import/export syntax with its own module scope.
+Q0038,C,Medium,Technical,Memory,What is a dangling pointer?,A pointer that refers to storage whose lifetime has ended.
+Q0039,CSS,Hard,Technical,Advanced,"In CSS, which statement best answers: What is :is()?",A functional pseudo-class that matches an element if it matches any selector in its forgiving selector list.
+Q0040,HTML,Interview,Interview,Interview,"Why use button type=""submit"" inside a form?",It explicitly creates a submit control for the form and participates in form submission behavior.
+Q0041,HTML,Hard,Technical,Forms,What is form validation?,Checking whether submitted control values satisfy constraints before processing or submission.
+Q0042,Java,Hard,Technical,Advanced,What is CompletableFuture?,A class for representing and composing asynchronous computations.
+Q0043,CSS,Easy,Technical,Basics,What property changes background color?,background-color
+Q0044,C,Interview,Interview,Interview,What is a segmentation fault?,A common operating-system signal caused by invalid memory access; it is not itself a C language construct.
+Q0045,C++,Medium,Technical,STL,What does std::vector::size() return?,The number of elements currently stored in the vector.
+Q0046,HTML,Easy,Technical,Basics,Which element creates a form?,The form element.
+Q0047,HTML,Interview,Interview,Interview,When should you use a button instead of an anchor?,Use button for an action in the current page or application; use an anchor for navigation to a resource or URL.
+Q0048,CSS,Hard,Technical,Grid,"In CSS, which statement best answers: What does auto-fit do in a repeat() grid pattern?","It allows the browser to fit as many tracks as possible into the available space, collapsing empty tracks where appropriate."
+Q0049,CSS,Medium,Technical,Cascade,Why can a more specific selector override another declaration?,Specificity is one of the factors the cascade uses when otherwise comparable declarations compete.
+Q0050,Java,Easy,Technical,Basics,"If String s = ""Java""; what does s.length() return?",4
+Q0051,C,Hard,Technical,Pointers,What does int (*p)[10] declare?,p as a pointer to an array of 10 int elements.
+Q0052,Java,Medium,Technical,JVM,What is JIT compilation?,Just-in-time compilation that compiles frequently executed bytecode into native machine code at runtime.
+Q0053,CSS,Medium,Technical,Selectors,What does the child combinator > select?,Elements that are direct children of the preceding selector.
+Q0054,Java,Medium,Technical,Collections,What is HashSet?,A Set implementation that stores unique elements using hashing.
+Q0055,C++,Interview,Interview,Interview,Why can vector reallocation invalidate pointers and iterators?,"Reallocation may move elements to a new storage block, invalidating references, pointers, and iterators to the old elements."
+Q0056,JavaScript,Medium,Technical,Applied,"If const obj = {a:1}; then obj.a = 2;, is the reassignment of the binding invalid?","No; const prevents rebinding the variable, but the object's properties can still be changed unless the object is otherwise made immutable."
+Q0057,C++,Interview,Interview,Interview,Why prefer standard library containers?,"They provide well-tested ownership, memory management, iterators, algorithms, and interoperability with the language ecosystem."
+Q0058,C,Medium,Technical,Strings,"In C, which statement best answers: Why can strcpy() be dangerous?",It does not know the destination capacity and can overflow it if the source is too large.
+Q0059,C++,Interview,Interview,Interview,Why is a virtual destructor important?,"When deleting a derived object through a base pointer, a virtual destructor ensures the derived destructor is invoked."
+Q0060,JavaScript,Hard,Technical,Advanced,What is event delegation?,Handling events on a common ancestor instead of attaching separate handlers to every descendant.
+Q0061,C++,Interview,Interview,Interview,"In C++, which statement best answers: When would you use move semantics?","When transferring resources from an object whose value is no longer needed, especially for expensive-to-copy resources."
+Q0062,CSS,Interview,Interview,Interview,Why can overflow-x: hidden be risky?,It can mask content or layout problems and may interfere with expected scrolling behavior.
+Q0063,C,Interview,Interview,Interview,How can a buffer overflow occur in C?,"By reading or writing beyond the bounds of an object, often because capacity is not checked."
+Q0064,Java,Medium,Technical,Generics,"In Java, which statement best answers: What are generics used for?",They provide compile-time type safety and reusable parameterized types.
+Q0065,C,Easy,Technical,Basics,Which keyword skips the rest of the current loop iteration?,continue
+Q0066,JavaScript,Medium,Technical,Objects,"In JavaScript, which statement best answers: What is the spread syntax?",Syntax using ... to expand iterable elements or object properties in supported contexts.
+Q0067,Java,Medium,Technical,Exceptions,What is the difference between checked and unchecked exceptions?,Checked exceptions are subject to compile-time checking; unchecked exceptions are RuntimeException subclasses or Errors.
+Q0068,Python,Medium,Technical,OOP,What is @property used for?,It exposes method-based behavior through attribute-style access.
+Q0069,Java,Hard,Technical,Concurrency,What is deadlock?,A state where threads are permanently blocked because each is waiting for a resource held by another.
+Q0070,C++,Hard,Technical,Modern C++,"In C++, which statement best answers: What is perfect forwarding?","Preserving the value category of arguments when forwarding them, typically using std::forward."
+Q0071,JavaScript,Medium,Technical,Objects,"In JavaScript, which statement best answers: What does Object.keys() return?",An array of an object's own enumerable string-keyed property names.
+Q0072,C,Hard,Technical,Advanced,"In C, which statement best answers: What is a bit-field?",A structure or union member declared with a specified number of bits.
+Q0073,CSS,Easy,Technical,Basics,How do you select a class?,"Use . followed by the class name, such as .card."
+Q0074,Java,Easy,Technical,OOP,"If class Dog extends Animal, what relationship is represented?",Dog is a subclass of Animal; it represents an is-a relationship.
+Q0075,Python,Hard,Technical,Performance,"In Python, which statement best answers: Why can list membership be slower than set membership?","List membership is generally linear in the number of elements, while hash-set membership is average constant time under normal hashing assumptions."
+Q0076,HTML,Medium,Technical,Media,"In HTML, which statement best answers: Which element embeds video content?",The video element.
+Q0077,Python,Hard,Technical,Performance,Why can list membership be slower than set membership?,"List membership is generally linear in the number of elements, while hash-set membership is average constant time under normal hashing assumptions."
+Q0078,Java,Medium,Technical,OOP,"In Java, which statement best answers: What is abstraction?",Exposing essential behavior while hiding unnecessary implementation details.
+Q0079,C++,Hard,Technical,Templates,"In C++, which statement best answers: What is SFINAE?",A template substitution failure rule that can remove an invalid specialization from overload resolution rather than causing a hard error.
+Q0080,C,Easy,Technical,Basics,What is an array in C?,A contiguous collection of elements of the same type.
+Q0081,HTML,Hard,Technical,Web Platform,"In HTML, which statement best answers: What is content security policy?",A browser security policy delivered by HTTP headers or a meta element that restricts sources and types of content a page may load or execute.
+Q0082,JavaScript,Hard,Technical,Advanced,What is a WeakMap?,A key-value collection whose keys must be objects and whose entries do not prevent those keys from being garbage-collected.
+Q0083,C,Hard,Technical,Advanced,What is the strict aliasing rule concerned with?,It restricts how an object's stored value may be accessed through lvalues of incompatible types.
+Q0084,C,Easy,Technical,Operators,"In C, which statement best answers: Which operator performs bitwise OR in C?",|
+Q0085,JavaScript,Easy,Technical,Basics,What is null?,A primitive value representing an intentional absence of an object value.
+Q0086,Java,Medium,Technical,Collections,Why does HashSet rely on hashCode() and equals()?,Hashing narrows the candidate bucket while equality determines whether elements are logically equal.
+Q0087,Java,Interview,Interview,Interview,"In Java, which statement best answers: What happens if main() is not public?",The standard Java launcher will not accept it as the conventional application entry point.
+Q0088,JavaScript,Interview,Interview,Interview,What is hoisting?,"A description of how declarations are processed before execution within their scope; exact behavior differs between var, let, const, functions, and classes."
+Q0089,JavaScript,Medium,Technical,Closures,"If an inner function references a variable from an outer function, what feature enables that access after the outer call returns?",A closure over the outer lexical environment.
+Q0090,C++,Medium,Technical,STL,"In C++, which statement best answers: What does std::vector::size() return?",The number of elements currently stored in the vector.
+Q0091,Java,Hard,Technical,JVM,"In Java, which statement best answers: What is the heap?",The JVM memory area from which objects and arrays are generally allocated.
+Q0092,CSS,Easy,Technical,Basics,What does position: relative do?,It keeps the element in normal flow while allowing offset positioning relative to its normal position.
+Q0093,C++,Interview,Interview,Interview,"In C++, which statement best answers: What is dependency inversion in C++ design?",High-level code should depend on abstractions rather than concrete low-level implementations.
+Q0094,Java,Hard,Technical,Generics,"In Java, which statement best answers: What is type erasure?","Java's generics are largely implemented by erasing type parameters from runtime representations, with compiler-generated casts where needed."
+Q0095,HTML,Medium,Technical,Forms,What is the difference between GET and POST in HTML forms?,GET encodes form data into the request URL; POST sends the data in the request body.
+Q0096,CSS,Interview,Interview,Interview,How would you organize CSS in a large project?,"Use consistent naming and layering, component boundaries, design tokens or custom properties, and avoid unnecessary specificity."
+Q0097,C,Medium,Technical,Pointers,What is the key difference between an array name and a pointer variable in typical C expressions?,An array is an array object with fixed storage; a pointer is a separate object that stores an address and can be reassigned.
+Q0098,HTML,Hard,Technical,Applied,"If untrusted text is inserted as textContent rather than HTML markup, why is that generally safer against HTML injection?",textContent treats the value as text rather than parsing it as HTML.
+Q0099,C++,Interview,Interview,Interview,"In C++, which statement best answers: Why use const correctness?",It makes interfaces clearer and lets the compiler prevent unintended modification.
+Q0100,C,Hard,Technical,Memory,What is undefined behavior?,Behavior for which the C standard imposes no requirements on the program's result.
+Q0101,C++,Interview,Interview,Interview,Why prefer RAII in C++?,"It ties resource release to object lifetime, making cleanup automatic and exception-safe."
+Q0102,Python,Easy,Technical,Strings,"In Python, which statement best answers: How do you split a string into a list?",Use str.split().
+Q0103,C,Easy,Technical,Basics,Which header file provides printf() and scanf()?,stdio.h
+Q0104,Java,Hard,Technical,JVM,What is Metaspace?,A native-memory area used by HotSpot to store class metadata.
+Q0105,C++,Medium,Technical,Modern C++,What is a lambda?,An unnamed function object expression that can capture surrounding variables.
+Q0106,JavaScript,Interview,Interview,Security,Why is client-side authorization insufficient for protected operations?,"A client can be modified or bypassed, so authorization must be enforced on the trusted server."
+Q0107,Java,Interview,Interview,Collections,Why can a HashMap lookup fail after a mutable key is changed?,The key may now hash or compare differently from when it was inserted.
+Q0108,C++,Medium,Technical,Memory,What is shared_ptr?,"A smart pointer that uses shared ownership, typically with reference counting."
+Q0109,C++,Easy,Technical,Basics,"If std::vector<int> v has three elements, what does v.size() return?",3
+Q0110,CSS,Easy,Technical,Basics,What property controls space outside an element's border?,margin
+Q0111,JavaScript,Medium,Technical,Async,Why is async/await often easier to read than nested callbacks?,It expresses asynchronous control flow in a syntax resembling sequential code while preserving Promise-based behavior.
+Q0112,HTML,Medium,Technical,Graphics,What is canvas used for?,"Script-driven, pixel-based drawing and graphics."
+Q0113,JavaScript,Easy,Technical,Arrays,How do you add an element to the end of an array?,Use push().
+Q0114,Python,Medium,Technical,Generators,"In Python, which statement best answers: What does yield do?",It produces a value from a generator function and suspends its execution until resumed.
+Q0115,Python,Hard,Technical,Async,"In Python, which statement best answers: What is an async generator?",A generator function defined with async def that uses yield and can be consumed asynchronously.
+Q0116,HTML,Medium,Technical,Metadata,"In HTML, which statement best answers: What does meta charset=""UTF-8"" specify?",The document's character encoding as UTF-8.
+Q0117,CSS,Easy,Technical,Basics,What does position: absolute do?,It removes the element from normal flow and positions it relative to an appropriate containing block.
+Q0118,CSS,Easy,Technical,Basics,What property changes line spacing?,line-height
+Q0119,JavaScript,Hard,Technical,Performance,"In JavaScript, which statement best answers: What is debouncing?",Delaying execution until a burst of events has stopped for a specified period.
+Q0120,HTML,Hard,Technical,Web Platform,"In HTML, which statement best answers: What is the DOM?","The Document Object Model, a programming interface representing an HTML document as a tree of nodes."
+Q0121,HTML,Medium,Technical,Links,"In HTML, which statement best answers: What does target=""_blank"" commonly do?",It requests opening the linked resource in a new browsing context.
+Q0122,Python,Hard,Technical,Functions,"If a closure refers to a nonlocal variable and uses nonlocal to rebind it, what happens?",The rebinding affects the variable in the nearest enclosing function scope where that variable is defined.
+Q0123,C,Hard,Technical,Advanced,"In C, which statement best answers: What is unspecified behavior?",Behavior where the implementation may choose among multiple valid possibilities without being required to document which one.
+Q0124,CSS,Medium,Technical,Overflow,What does overflow: auto do?,"It allows scrolling when content overflows, as needed by the browser."
+Q0125,Python,Medium,Technical,Modules,"In Python, which statement best answers: What is a module?",A Python file or module object that provides definitions and executable code.
+Q0126,JavaScript,Hard,Technical,Performance,What is throttling?,Limiting how frequently a function can execute during a continuous stream of events.
+Q0127,Python,Interview,Interview,Interview,Why use with open(...) as f?,It ensures the file context manager closes the file when leaving the block.
+Q0128,Python,Easy,Technical,Basics,What does len() return?,The number of items in an object when the object implements the required length protocol.
+Q0129,CSS,Easy,Technical,Basics,What property changes font size?,font-size
+Q0130,Python,Medium,Technical,Collections,"In Python, which statement best answers: What is dictionary comprehension?",A compact syntax for constructing dictionaries from an iterable.
+Q0131,Java,Medium,Technical,Strings,"In Java, which statement best answers: What does String.length() return?",The number of UTF-16 code units in the string.
+Q0132,HTML,Hard,Technical,Security,"In HTML, which statement best answers: What is XSS?","Cross-site scripting, where attacker-controlled content is executed as script in a user's browser in a vulnerable web context."
+Q0133,Java,Hard,Technical,Concurrency,"In Java, which statement best answers: What does synchronized do?",It provides mutual exclusion and establishes memory-visibility guarantees around synchronized access.
+Q0134,Python,Easy,Technical,Basics,Which operator checks object identity?,is
+Q0135,C++,Hard,Technical,Object Model,"In C++, which statement best answers: What is object slicing?","When a derived object is copied into a base object by value, the derived-specific part is discarded."
+Q0136,Python,Easy,Technical,Strings,How do you split a string into a list?,Use str.split().
+Q0137,Python,Interview,Interview,Performance,Why profile before optimizing Python code?,It identifies actual bottlenecks instead of optimizing code that may not materially affect runtime.
+Q0138,Python,Hard,Technical,Applied,"If a generator function executes yield 5, what does calling next() on its generator produce at that point?",5
+Q0139,Java,Hard,Technical,Advanced,What is try-with-resources?,A construct that automatically closes resources implementing AutoCloseable when leaving the try block.
+Q0140,Java,Interview,Interview,Interview,What is the difference between composition and inheritance?,Composition builds objects from other objects; inheritance derives one class from another and creates an is-a relationship.
+Q0141,Python,Easy,Technical,Strings,"If s = 'Python', what does s[0] return?",'P'
+Q0142,Java,Easy,Technical,Basics,What is an interface?,A reference type that defines a contract of methods and can contain other permitted members.
+Q0143,C++,Medium,Technical,Modern C++,What does constexpr indicate?,It declares an entity or function intended to be usable in constant evaluation when its conditions permit.
+Q0144,Python,Hard,Technical,Async,"In Python, which statement best answers: What is asyncio?",Python's standard library framework for asynchronous I/O using an event loop and coroutines.
+Q0145,CSS,Interview,Interview,Interview,How do you center an item with Flexbox?,A common approach is display:flex with justify-content:center and align-items:center on the container.
+Q0146,Python,Easy,Technical,Collections,How do you remove and return the last list item?,Use list.pop().
+Q0147,C++,Medium,Technical,OOP,What is a pure virtual function?,"A virtual function declared with = 0, making the class abstract if it remains pure."
+Q0148,CSS,Easy,Technical,Basics,How do you select an element by ID?,"Use # followed by the ID, such as #header."
+Q0149,Java,Hard,Technical,Concurrency,What does synchronized do?,It provides mutual exclusion and establishes memory-visibility guarantees around synchronized access.
+Q0150,JavaScript,Medium,Technical,Arrays,"In JavaScript, which statement best answers: What does map() do?",It creates a new array containing the results of calling a function on each element.
+Q0151,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: Why is a label important for form inputs?",It gives users an understandable name for the control and improves click/tap targeting and assistive-technology support.
+Q0152,JavaScript,Interview,Interview,Interview,Promise.all vs Promise.race?,Promise.all waits for all promises and rejects if one rejects; Promise.race settles when the first input promise settles.
+Q0153,JavaScript,Interview,Interview,Interview,What is the difference between shallow and deep copy in JavaScript?,"A shallow copy duplicates only the outer object structure; nested objects remain shared references, while a deep copy duplicates nested data according to the chosen cloning mechanism."
+Q0154,C,Easy,Technical,Basics,"Which header file declares malloc(), calloc(), realloc(), and free()?",stdlib.h
+Q0155,HTML,Hard,Technical,Web Platform,"In HTML, which statement best answers: What is progressive enhancement?","Building a functional baseline first, then adding richer capabilities for browsers or devices that support them."
+Q0156,CSS,Hard,Technical,Stacking,What does z-index control?,The stacking order of positioned elements and certain other items within the relevant stacking context.
+Q0157,C,Interview,Interview,Interview,Why should pointer arithmetic normally be used only within the same array object?,The C standard defines pointer arithmetic in terms of array objects; going outside those bounds can produce undefined behavior.
+Q0158,Java,Hard,Technical,Generics,What is type erasure?,"Java's generics are largely implemented by erasing type parameters from runtime representations, with compiler-generated casts where needed."
+Q0159,CSS,Hard,Technical,Stacking,"In CSS, which statement best answers: What does z-index control?",The stacking order of positioned elements and certain other items within the relevant stacking context.
+Q0160,CSS,Easy,Technical,Basics,What property makes text bold?,font-weight
+Q0161,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: Why is alt text not simply an image title?","Alt text serves as the text alternative for the image's meaning; a title attribute has a different, optional tooltip-oriented role."
+Q0162,CSS,Medium,Technical,Flexbox,What does align-items control?,Alignment of flex items along the cross axis.
+Q0163,C,Medium,Technical,Data Types,"In C, which statement best answers: What is an enum in C?",A user-defined type consisting of named integer constants.
+Q0164,Java,Hard,Technical,Advanced,What is a functional interface?,"An interface with exactly one abstract method, suitable as a target for lambda expressions."
+Q0165,CSS,Hard,Technical,Selectors,"In CSS, which statement best answers: What does the adjacent sibling combinator + select?",An element immediately following the specified sibling.
+Q0166,Java,Hard,Technical,Applied,"If a method is declared final, can a subclass override it?",No.
+Q0167,Python,Medium,Technical,Exceptions,"In Python, which statement best answers: What does raise do?",It raises an exception or re-raises the currently handled exception.
+Q0168,JavaScript,Hard,Technical,Security,Why is CORS not an authentication mechanism?,"It governs browser cross-origin access, while authentication establishes identity and authorization controls permissions."
+Q0169,Java,Easy,Technical,Basics,What does JDK stand for?,Java Development Kit.
+Q0170,C++,Medium,Technical,Modern C++,"In C++, which statement best answers: What is auto used for?",It lets the compiler deduce a variable's type from its initializer.
+Q0171,C,Medium,Technical,Preprocessor,What does #include do?,It directs the preprocessor to include the contents of another file.
+Q0172,Python,Hard,Technical,Advanced,What is monkey patching?,Changing or replacing attributes of modules or classes at runtime.
+Q0173,C,Hard,Technical,Advanced,What is unspecified behavior?,Behavior where the implementation may choose among multiple valid possibilities without being required to document which one.
+Q0174,JavaScript,Medium,Technical,Modules,"In JavaScript, which statement best answers: What is dynamic import()?",A function-like syntax that loads a module asynchronously and returns a Promise for its module namespace object.
+Q0175,HTML,Easy,Technical,Forms,"If an input has type=""email"", what kind of data is the browser encouraged to validate?",An email-address format.
+Q0176,CSS,Medium,Technical,Overflow,"In CSS, which statement best answers: What does overflow: auto do?","It allows scrolling when content overflows, as needed by the browser."
+Q0177,C++,Medium,Technical,STL,"If a vector's size is 5 and capacity is 10, how many elements does it currently contain?",5.
+Q0178,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: How can you debug a CSS layout?","Use browser developer tools to inspect computed styles, box-model dimensions, layout overlays, specificity, and the cascade."
+Q0179,CSS,Medium,Technical,Selectors,"In CSS, which statement best answers: What does the child combinator > select?",Elements that are direct children of the preceding selector.
+Q0180,C,Medium,Technical,Preprocessor,What is conditional compilation?,Compiling sections of source code only when specified preprocessor conditions are satisfied.
+Q0181,C,Medium,Technical,Storage,"In C, which statement best answers: What does static mean for a local variable?","Its storage duration lasts for the entire program, while its block scope remains local."
+Q0182,Python,Medium,Technical,Memory,"In Python, which statement best answers: Is Python pass-by-reference or pass-by-value?",Python passes object references by assignment; function parameters receive references to objects.
+Q0183,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: Why avoid using tables for page layout?","Tables are intended for tabular data; using them for layout harms semantics, responsiveness, and accessibility."
+Q0184,C++,Hard,Technical,Advanced,"In C++, which statement best answers: What is copy elision?",An optimization or language-guaranteed omission of certain object copies or moves in permitted cases.
+Q0185,C,Medium,Technical,Pointers,"In C, which statement best answers: What is pointer arithmetic based on?",It advances or retreats by multiples of the pointed-to type's size.
+Q0186,Java,Medium,Technical,Strings,What does String.length() return?,The number of UTF-16 code units in the string.
+Q0187,JavaScript,Medium,Technical,Functions,What is a callback?,A function passed to another function to be invoked later or under a particular condition.
+Q0188,JavaScript,Hard,Technical,Prototypes,"In JavaScript, which statement best answers: What is the prototype chain?",The chain of objects JavaScript follows for inherited property lookup.
+Q0189,C,Medium,Technical,Pointers,What is a pointer to pointer?,A pointer whose value is the address of another pointer.
+Q0190,JavaScript,Hard,Technical,Runtime,Why does JavaScript generally run application code on a single main thread in browsers?,"The browser coordinates JavaScript execution and many UI operations on a main thread, so long synchronous work can block interaction."
+Q0191,C++,Interview,Interview,OOP,Why use a base-class reference for polymorphic behavior?,It can refer to a derived object without slicing and can dispatch virtual functions dynamically.
+Q0192,CSS,Easy,Technical,Box Model,"If an element has padding: 20px, what does that space represent?",Space between the content box and the border.
+Q0193,JavaScript,Medium,Technical,Functions,What is a closure?,A function together with access to variables from its surrounding lexical environment.
+Q0194,Python,Easy,Technical,Basics,What is the result of bool(0) in Python?,False
+Q0195,JavaScript,Hard,Technical,Advanced,What is a Symbol?,"A primitive type used to create unique values, often used as property keys."
+Q0196,C++,Easy,Technical,Applied,"If std::string s = ""Hi""; is declared, what type is s?",std::string
+Q0197,Python,Medium,Technical,OOP,What is polymorphism?,Using a common interface to work with objects of different concrete types.
+Q0198,C,Easy,Technical,Pointers,A variable x has type int and p is declared as int *p = &x. What does *p denote?,The int object x; dereferencing p accesses x.
+Q0199,HTML,Medium,Technical,Accessibility,Why should form controls have accessible names?,Users of assistive technologies need a programmatically determinable name to understand each control's purpose.
+Q0200,HTML,Easy,Technical,Forms,"In HTML, which statement best answers: Which input type creates a radio button?","type=""radio"""
+Q0201,C,Hard,Technical,Advanced,What is a translation unit in C?,"A source file after preprocessing, including included headers."
+Q0202,Java,Hard,Technical,Applied,"If an object is no longer reachable from any live reference, what can eventually happen?",The garbage collector may reclaim its memory.
+Q0203,HTML,Hard,Technical,Accessibility,What is the accessible name of a control?,The name exposed to accessibility APIs that identifies the control to assistive technologies.
+Q0204,HTML,Easy,Technical,Applied,Which attribute should provide alternative text for an img element?,alt
+Q0205,Java,Interview,Interview,Interview,What is the benefit of final variables?,"They cannot be reassigned after initialization, making the intended immutability of the reference or value binding clearer."
+Q0206,Java,Interview,Interview,Interview,What is the purpose of the JVM garbage collector?,To reclaim heap memory occupied by objects that are no longer reachable.
+Q0207,C,Hard,Technical,Memory,Why is returning the address of a local automatic variable unsafe?,"Its lifetime ends when the function returns, so the pointer becomes invalid."
+Q0208,C,Hard,Technical,Pointers,What is the type of &arr when arr is int arr[10]?,"int (*)[10], a pointer to the whole array."
+Q0209,Python,Interview,Interview,Interview,What is the difference between shallow and deep copy?,A shallow copy duplicates the outer container while retaining references to nested objects; a deep copy recursively copies nested objects.
+Q0210,Java,Easy,Technical,Basics,Which keyword prevents a class from being inherited?,final
+Q0211,HTML,Easy,Technical,Basics,Which element creates a paragraph?,The p element.
+Q0212,C,Medium,Technical,Pointers,What is pointer arithmetic based on?,It advances or retreats by multiples of the pointed-to type's size.
+Q0213,JavaScript,Medium,Technical,Objects,What is optional chaining?,"The ?. operator that safely accesses a property, method, or index when the preceding value is nullish."
+Q0214,CSS,Hard,Technical,Selectors,"In CSS, which statement best answers: What does the general sibling combinator ~ select?",Following siblings that share the same parent.
+Q0215,C++,Easy,Technical,Basics,What does const mean for an object?,It prevents modification of the object through that const-qualified access.
+Q0216,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: Why use CSS custom properties?","They centralize reusable values, support runtime changes, and make themes easier to maintain."
+Q0217,CSS,Hard,Technical,Cascade,How is specificity generally compared?,"Selectors are compared by their specificity components, with origin/importance and source order also participating in the cascade."
+Q0218,C,Medium,Technical,Memory,What is dynamic memory allocation in C?,"Allocating memory at runtime, commonly with malloc(), calloc(), realloc(), and freeing it with free()."
+Q0219,HTML,Easy,Technical,Forms,Which element creates a dropdown list?,The select element.
+Q0220,HTML,Medium,Technical,Forms,What does the required attribute do?,It indicates that a form control must have a value before the form can be submitted.
+Q0221,CSS,Hard,Technical,Advanced,What is CSS nesting?,A CSS syntax feature that allows related rules to be nested within another rule in supported implementations.
+Q0222,C,Interview,Interview,Interview,Why use static analysis for C?,"It can identify defects such as null dereferences, leaks, suspicious conversions, and control-flow issues before runtime."
+Q0223,CSS,Medium,Technical,Units,"In CSS, which statement best answers: What does 100vh historically represent?","A length equal to the viewport height; modern mobile viewport units also include svh, lvh, and dvh for more precise behavior."
+Q0224,Python,Medium,Technical,Exceptions,What is finally used for?,"Code in finally is intended to run whether an exception occurs or not, subject to control-flow termination."
+Q0225,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: What is the difference between shallow and deep copy in JavaScript?","A shallow copy duplicates only the outer object structure; nested objects remain shared references, while a deep copy duplicates nested data according to the chosen cloning mechanism."
+Q0226,C,Easy,Technical,Files,"In C, which statement best answers: Which standard function closes a file?",fclose()
+Q0227,Python,Medium,Technical,Functions,What are *args and **kwargs used for?,They collect extra positional and keyword arguments respectively.
+Q0228,Python,Interview,Interview,Interview,"In Python, which statement best answers: What is PEP 8?",The primary style guide for Python code.
+Q0229,JavaScript,Hard,Technical,Promises,"In JavaScript, which statement best answers: What is a microtask?","A job scheduled to run at a microtask checkpoint, such as a Promise reaction."
+Q0230,CSS,Hard,Technical,Advanced,"In CSS, which statement best answers: What does contain do in CSS?","It can establish containment boundaries that allow browsers to limit layout, paint, size, or style work depending on the containment type."
+Q0231,CSS,Medium,Technical,Units,What does 100vh historically represent?,"A length equal to the viewport height; modern mobile viewport units also include svh, lvh, and dvh for more precise behavior."
+Q0232,HTML,Medium,Technical,Metadata,"In HTML, which statement best answers: What does the viewport meta tag commonly control?","The viewport used by browsers on devices, especially for responsive layouts."
+Q0233,C,Easy,Technical,Basics,Which keyword defines a structure type declaration?,struct
+Q0234,C,Easy,Technical,Operators,"In C, which statement best answers: Which operator performs logical AND in C?",&&
+Q0235,C++,Interview,Interview,Interview,When would you use move semantics?,"When transferring resources from an object whose value is no longer needed, especially for expensive-to-copy resources."
+Q0236,C,Medium,Technical,Memory,"In C, which statement best answers: What does realloc() do?","It changes the size of a previously allocated memory block, possibly moving it."
+Q0237,JavaScript,Easy,Technical,Applied,"If let x = 5; then x = 7;, what is x?",7
+Q0238,Java,Medium,Technical,Threads,"In Java, which statement best answers: How can a thread be created in Java?",Common approaches include extending Thread or implementing Runnable; modern Java also provides higher-level concurrency APIs.
+Q0239,C++,Interview,Interview,Interview,Why can passing large objects by const reference be useful?,It avoids an unnecessary copy while preventing the called function from modifying the referred object.
+Q0240,JavaScript,Medium,Technical,Promises,"If Promise.all receives one rejected promise, what is the resulting promise's state?","It rejects with that rejection reason, without waiting for all other promises to fulfill."
+Q0241,HTML,Easy,Technical,Semantics,Which element should normally contain the page's primary navigation links?,nav
+Q0242,C++,Interview,Interview,Interview,Why prefer make_unique or make_shared over explicit new in many cases?,They construct smart pointers directly and reduce ownership and exception-safety mistakes.
+Q0243,C++,Hard,Technical,Templates,What is SFINAE?,A template substitution failure rule that can remove an invalid specialization from overload resolution rather than causing a hard error.
+Q0244,JavaScript,Medium,Technical,Modules,What is dynamic import()?,A function-like syntax that loads a module asynchronously and returns a Promise for its module namespace object.
+Q0245,Python,Interview,Interview,Interview,Why use virtual environments?,To isolate project dependencies and avoid version conflicts between projects.
+Q0246,Java,Medium,Technical,Strings,"If two String literals have the same value, can they refer to the same interned object?",Yes; identical string literals can refer to the same pooled String object.
+Q0247,CSS,Interview,Interview,Interview,How do you make a page responsive?,"Use flexible layouts, relative units, responsive media queries, appropriately sized media, and layouts that adapt to available space."
+Q0248,C,Easy,Technical,Basics,Which keyword exits a loop immediately?,break
+Q0249,C++,Medium,Technical,References,Can a reference be reseated to refer to another object?,"No; after initialization, a reference remains bound to its referred object."
+Q0250,Python,Easy,Technical,Operators,"In Python, which statement best answers: What operator performs exponentiation?",**
+Q0251,CSS,Hard,Technical,Applied,"If two equally specific declarations have the same importance and origin, what decides the winner?",Source order; the later declaration wins.
+Q0252,Java,Easy,Technical,Basics,What is a package?,A namespace used to organize related Java types.
+Q0253,C++,Medium,Technical,STL,"In C++, which statement best answers: What is std::unordered_map?",A hash-based associative container providing average constant-time lookup under suitable hashing.
+Q0254,Java,Easy,Technical,Basics,What is the entry point of a typical Java application?,The main method: public static void main(String[] args).
+Q0255,HTML,Easy,Technical,Forms,Which element defines an option in a select?,The option element.
+Q0256,Python,Interview,Interview,Interview,Why is mutable shared state risky in concurrent Python code?,"Concurrent operations can observe or modify shared state in unexpected orders, causing race conditions unless synchronization is appropriate."
+Q0257,HTML,Medium,Technical,Media,Which element embeds video content?,The video element.
+Q0258,JavaScript,Interview,Interview,Interview,Why use TypeScript with JavaScript projects?,"It adds static type checking and tooling that can catch many classes of errors before runtime, while compiling to JavaScript."
+Q0259,Python,Medium,Technical,Memory,Is Python pass-by-reference or pass-by-value?,Python passes object references by assignment; function parameters receive references to objects.
+Q0260,Python,Medium,Technical,Typing,"In Python, which statement best answers: What is duck typing?",An approach where an object's suitability is determined by the operations it supports rather than its nominal class.
+Q0261,C,Easy,Technical,Basics,What does %d commonly represent in printf()?,A signed decimal integer.
+Q0262,Python,Medium,Technical,Iterators,"In Python, which statement best answers: What is an iterator?","An object implementing the iterator protocol, typically providing __iter__() and __next__()."
+Q0263,C++,Medium,Technical,OOP,What is an abstract class?,"A class that cannot be instantiated, commonly because it has at least one pure virtual function."
+Q0264,Java,Hard,Technical,Concurrency,What is volatile used for?,"It provides visibility and ordering guarantees for accesses to a variable, but does not make compound operations such as increment atomic."
+Q0265,C++,Interview,Interview,Interview,"In C++, which statement best answers: Why is a virtual destructor important?","When deleting a derived object through a base pointer, a virtual destructor ensures the derived destructor is invoked."
+Q0266,JavaScript,Hard,Technical,Runtime,What is a task in the browser event loop?,A unit of scheduled work such as a timer callback or event callback that the browser processes in its task queues.
+Q0267,HTML,Interview,Interview,Interview,What is the purpose of the lang attribute?,"It identifies the language of document content, helping accessibility tools and other user agents."
+Q0268,C,Medium,Technical,Strings,Why is strlen() not constant-time?,It must generally scan until the null terminator to determine the string length.
+Q0269,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: Why use event delegation?",It reduces the number of listeners and naturally handles dynamically added descendants when the event bubbles.
+Q0270,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: What is hoisting?","A description of how declarations are processed before execution within their scope; exact behavior differs between var, let, const, functions, and classes."
+Q0271,JavaScript,Interview,Interview,Interview,What is the difference between synchronous and asynchronous code?,Synchronous execution proceeds in the current flow; asynchronous operations allow other work to be scheduled while waiting for completion.
+Q0272,C,Easy,Technical,Control Flow,Which statement selects among multiple branches based on an expression?,switch
+Q0273,JavaScript,Easy,Technical,Basics,What does === test?,Strict equality without implicit type coercion between the operands.
+Q0274,C++,Interview,Interview,Interview,"In C++, which statement best answers: Why prefer RAII in C++?","It ties resource release to object lifetime, making cleanup automatic and exception-safe."
+Q0275,Java,Hard,Technical,JVM,What is class loading?,"The JVM process of locating, loading, linking, and initializing classes as required."
+Q0276,Python,Hard,Technical,Typing,What is a type hint?,Optional annotation that documents or supports tooling for expected types; it is not generally enforced by Python at runtime.
+Q0277,C,Easy,Technical,Basics,What terminates a C string?,"A null character, '\0'."
+Q0278,CSS,Easy,Technical,Basics,What is a pseudo-element?,"A selector that styles a conceptual subpart of an element, such as ::before."
+Q0279,C++,Hard,Technical,Memory,What is a use-after-free?,Accessing an object or allocation after its lifetime or allocation has ended.
+Q0280,Python,Hard,Technical,Internals,"In Python, which statement best answers: What is the GIL in CPython?",The Global Interpreter Lock historically used by CPython to protect execution of Python bytecode in the standard interpreter build; free-threaded builds also exist in modern Python.
+Q0281,Java,Interview,Interview,Interview,"In Java, which statement best answers: What is the difference between composition and inheritance?",Composition builds objects from other objects; inheritance derives one class from another and creates an is-a relationship.
+Q0282,C,Easy,Technical,Basics,What does sizeof return?,The size in bytes of its operand's type or object.
+Q0283,Python,Easy,Technical,Collections,"In Python, which statement best answers: How do you add an item to the end of a list?",Use list.append(item).
+Q0284,CSS,Hard,Technical,Stacking,What is a stacking context?,An isolated group of elements whose stacking order is resolved together within its parent stacking context.
+Q0285,HTML,Hard,Technical,Security,Why is HTTPS important for web forms?,"It protects data in transit from network eavesdropping and tampering between the browser and server, though it does not by itself validate the application."
+Q0286,CSS,Interview,Interview,Interview,How would you implement dark mode?,Use a theme strategy with custom properties and media or application state to switch the values used by components.
+Q0287,C++,Easy,Technical,Basics,What is an exception?,An object or value used to transfer control when an exceptional condition occurs.
+Q0288,Java,Hard,Technical,Concurrency,"In Java, which statement best answers: What is deadlock?",A state where threads are permanently blocked because each is waiting for a resource held by another.
+Q0289,Python,Medium,Technical,OOP,What is self?,The conventional name for the instance argument passed to instance methods.
+Q0290,Java,Easy,Technical,Interfaces,"In Java, which statement best answers: Which keyword declares that a class implements an interface?",implements
+Q0291,C,Easy,Technical,Basics,What does %f commonly represent in printf()?,A floating-point value in fixed-point notation.
+Q0292,JavaScript,Hard,Technical,Promises,Why can Promise callbacks run before a timer callback?,"Promise reactions are microtasks, which are generally processed before the next task such as a timer callback."
+Q0293,JavaScript,Medium,Technical,Objects,What is the spread syntax?,Syntax using ... to expand iterable elements or object properties in supported contexts.
+Q0294,Java,Hard,Technical,Reflection,What is reflection?,"The ability to inspect and interact with classes, methods, fields, and constructors at runtime."
+Q0295,C++,Hard,Technical,Concurrency,"In C++, which statement best answers: What is a data race?","Concurrent conflicting accesses to the same memory location, with at least one write, without required synchronization; in C++ this causes undefined behavior."
+Q0296,JavaScript,Interview,Interview,Interview,What is the benefit of AbortController?,It provides a standard way to signal cancellation to compatible asynchronous operations such as fetch.
+Q0297,Python,Medium,Technical,Modules,What is a module?,A Python file or module object that provides definitions and executable code.
+Q0298,JavaScript,Interview,Interview,Interview,Why use modules instead of one large JavaScript file?,"Modules provide scope, explicit dependencies, reusable units, and better tooling."
+Q0299,Python,Hard,Technical,Advanced,What is method resolution order?,"The order Python uses to search classes for attributes and methods, especially in inheritance hierarchies."
+Q0300,C++,Easy,Technical,Basics,What is the scope resolution operator?,::
+Q0301,Java,Medium,Technical,Strings,"In Java, which statement best answers: Why is String immutable?","Its state cannot be changed after construction; this supports safe sharing, hashing, and string-pool behavior."
+Q0302,Python,Interview,Interview,Interview,"In Python, which statement best answers: Why is Python popular for data science?","It has a large ecosystem for numerical computing, data analysis, visualization, machine learning, and rapid experimentation."
+Q0303,C,Medium,Technical,Files,What does fopen() return on failure?,A null pointer.
+Q0304,C,Hard,Technical,Applied,"If a pointer is incremented by one while pointing within an int array, what conceptual movement occurs?","It moves to the next int element, not merely one byte."
+Q0305,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: Why use semantic HTML?","It improves document structure, accessibility, maintainability, and can help user agents and search engines understand content."
+Q0306,Python,Hard,Technical,Advanced,"In Python, which statement best answers: What is monkey patching?",Changing or replacing attributes of modules or classes at runtime.
+Q0307,C++,Easy,Technical,References,If int x = 5; int& r = x; what does r represent?,An alias for x.
+Q0308,Java,Hard,Technical,Collections,"In Java, which statement best answers: What is ConcurrentHashMap?",A thread-safe map designed for concurrent access with substantially better concurrency than synchronizing an entire map.
+Q0309,Python,Easy,Technical,Basics,What is a string in Python?,An immutable sequence of Unicode code points.
+Q0310,Python,Hard,Technical,Internals,Why can reference cycles require cyclic garbage collection in CPython?,Reference counting alone cannot reclaim objects that reference one another when no external references remain.
+Q0311,Java,Easy,Technical,Basics,What is an object?,A runtime instance of a class.
+Q0312,HTML,Interview,Interview,Interview,How would you reduce HTML page weight?,"Remove unnecessary markup, compress or optimize referenced assets, defer noncritical resources, and avoid redundant DOM structures."
+Q0313,HTML,Interview,Interview,Interview,Why should decorative images often have empty alt text?,An empty alt attribute tells assistive technology the image is decorative so it can be skipped.
+Q0314,Python,Medium,Technical,Collections,Why is a set useful for membership tests?,It uses hashing and typically provides average constant-time membership checks.
+Q0315,Java,Easy,Technical,Basics,What does JVM stand for?,Java Virtual Machine.
+Q0316,Java,Interview,Interview,Interview,Why use immutable objects in concurrent systems?,"Their state cannot change after construction, reducing synchronization needs and making sharing safer."
+Q0317,HTML,Easy,Technical,Forms,Which input type creates a checkbox?,"type=""checkbox"""
+Q0318,JavaScript,Easy,Technical,Arrays,"In JavaScript, which statement best answers: How do you add an element to the end of an array?",Use push().
+Q0319,C++,Medium,Technical,Memory,What is a smart pointer?,"A class that manages ownership or lifetime of a dynamically allocated resource, such as unique_ptr or shared_ptr."
+Q0320,C++,Hard,Technical,Concurrency,What is a data race?,"Concurrent conflicting accesses to the same memory location, with at least one write, without required synchronization; in C++ this causes undefined behavior."
+Q0321,Python,Interview,Interview,Interview,How would you find a Python performance bottleneck?,Measure it with a profiler or targeted timing before changing the implementation.
+Q0322,CSS,Easy,Technical,Basics,What property changes letter spacing?,letter-spacing
+Q0323,Java,Easy,Technical,Access,Which access modifier allows package access without a modifier?,"Package-private access, when no access modifier is specified."
+Q0324,HTML,Medium,Technical,Semantics,Why is a semantic element better than a generic div when its meaning matches?,"It communicates structure and meaning to browsers, assistive technologies, developers, and other tools."
+Q0325,Java,Medium,Technical,OOP,What is abstraction?,Exposing essential behavior while hiding unnecessary implementation details.
+Q0326,HTML,Medium,Technical,Semantics,"In HTML, which statement best answers: What is the footer element for?","Footer content for a sectioning element or the page, such as author or related information."
+Q0327,C++,Hard,Technical,Concurrency,"In C++, which statement best answers: What is std::lock_guard?",An RAII wrapper that locks a mutex on construction and unlocks it on destruction.
+Q0328,Python,Interview,Interview,Interview,Why use logging instead of print() for production diagnostics?,"Logging provides levels, handlers, formatting, filtering, and configurable destinations."
+Q0329,HTML,Medium,Technical,Accessibility,What is ARIA?,Accessible Rich Internet Applications: attributes and roles that can improve accessibility when native HTML semantics are insufficient.
+Q0330,JavaScript,Easy,Technical,Basics,How do you declare a block-scoped variable that can be reassigned?,Use let.
+Q0331,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: Why is CSS called cascading?","When multiple declarations apply, the cascade resolves which declaration wins using factors such as origin, importance, specificity, and source order."
+Q0332,Java,Medium,Technical,Collections,What is the difference between ArrayList and LinkedList?,ArrayList provides fast indexed access through an array-backed structure; LinkedList is node-based and supports efficient insertion/removal at known positions but slower indexed access.
+Q0333,Java,Interview,Interview,Interview,"In Java, which statement best answers: What is dependency injection?",A design technique where an object's dependencies are supplied externally rather than created internally.
+Q0334,CSS,Medium,Technical,Grid,"If grid-template-columns is 1fr 2fr, how are the two tracks sized when free space is distributed?","The second track receives twice the flexible share of the first, subject to other grid sizing constraints."
+Q0335,CSS,Easy,Technical,Basics,What is CSS Grid?,A two-dimensional layout system for rows and columns.
+Q0336,HTML,Interview,Interview,Interview,Why is a label important for form inputs?,It gives users an understandable name for the control and improves click/tap targeting and assistive-technology support.
+Q0337,JavaScript,Hard,Technical,Runtime,What is the call stack?,The execution stack tracking active function calls.
+Q0338,C++,Interview,Interview,Interview,What is compile-time polymorphism?,"Polymorphism resolved during compilation, commonly through templates and function/operator overloading."
+Q0339,Python,Easy,Technical,Operators,What operator performs floor division?,//
+Q0340,Python,Interview,Interview,Interview,What is PEP 8?,The primary style guide for Python code.
+Q0341,C++,Easy,Technical,Basics,What is a pointer?,An object that stores an address or pointer value.
+Q0342,Java,Easy,Technical,Basics,Which keyword calls a superclass constructor or member?,super
+Q0343,CSS,Medium,Technical,Flexbox,"If flex-direction is column, what is the main axis?",The vertical axis in the default writing mode.
+Q0344,C,Hard,Technical,Advanced,What is a bit-field?,A structure or union member declared with a specified number of bits.
+Q0345,CSS,Medium,Technical,Grid,"In CSS, which statement best answers: What does gap control?",The spacing between rows and columns in layout systems such as Grid and Flexbox.
+Q0346,JavaScript,Easy,Technical,Basics,What does JSON.stringify() do?,It converts a JavaScript value into a JSON string when representable.
+Q0347,CSS,Medium,Technical,Flexbox,What does flex-wrap control?,Whether flex items can wrap onto multiple lines.
+Q0348,C,Interview,Interview,Interview,"In C, which statement best answers: When would you prefer calloc() over malloc()?",When you want allocated storage initialized to all-bits-zero and need an array-like allocation interface.
+Q0349,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: How do you make a page responsive?","Use flexible layouts, relative units, responsive media queries, appropriately sized media, and layouts that adapt to available space."
+Q0350,JavaScript,Medium,Technical,Functions,What is an arrow function?,A function expression using => with lexical this behavior and concise syntax.
+Q0351,C,Interview,Interview,Interview,Why should free() generally be called exactly once for an allocated block?,"Repeatedly freeing the same block is undefined behavior, while never freeing it can leak memory."
+Q0352,Python,Medium,Technical,Collections,What does list.sort() return?,None; it sorts the list in place.
+Q0353,HTML,Easy,Technical,Basics,What is semantic HTML?,Using elements according to their meaning and structural purpose.
+Q0354,C,Hard,Technical,Advanced,Why can reading an uninitialized automatic scalar variable be a bug?,Its value is indeterminate and using it in ways not permitted by the language can produce undefined behavior.
+Q0355,C,Easy,Technical,Operators,Which operator performs bitwise OR in C?,|
+Q0356,Python,Medium,Technical,Collections,What is dictionary comprehension?,A compact syntax for constructing dictionaries from an iterable.
+Q0357,CSS,Hard,Technical,Advanced,"In CSS, which statement best answers: What is :where()?","A functional pseudo-class like :is(), but its selector specificity is zero."
+Q0358,JavaScript,Easy,Technical,Objects,"In JavaScript, which statement best answers: How do you access an object's property using bracket notation?",Use object[propertyExpression].
+Q0359,Python,Easy,Technical,Basics,What does range() commonly provide?,A range object representing an arithmetic progression of integers.
+Q0360,JavaScript,Medium,Technical,Functions,What is a higher-order function?,"A function that takes functions as arguments, returns a function, or both."
+Q0361,JavaScript,Medium,Technical,Promises,"In JavaScript, which statement best answers: What is a Promise?",An object representing the eventual completion or failure of an asynchronous operation and its resulting value.
+Q0362,C++,Medium,Technical,Memory,What is weak_ptr?,A non-owning smart pointer that observes an object managed by shared_ptr.
+Q0363,C,Easy,Technical,Operators,Which operator performs logical AND in C?,&&
+Q0364,C++,Easy,Technical,Operators,"In C++, which statement best answers: Which operator accesses a member through a pointer?",->
+Q0365,Java,Medium,Technical,Threads,"In Java, which statement best answers: What is a thread?",A lightweight unit of execution within a process.
+Q0366,CSS,Medium,Technical,Units,"In CSS, which statement best answers: What is the difference between em and rem?","em is relative to the relevant element's font size, while rem is relative to the root element's font size."
+Q0367,JavaScript,Hard,Technical,Prototypes,"In JavaScript, which statement best answers: What is prototypal inheritance?",Inheritance based on objects delegating property lookup to prototype objects.
+Q0368,HTML,Medium,Technical,Accessibility,"If an informative image has meaningful content, should alt normally be empty?",No; it should normally have concise alternative text conveying the image's relevant meaning.
+Q0369,C++,Medium,Technical,Memory,"In C++, which statement best answers: What is weak_ptr?",A non-owning smart pointer that observes an object managed by shared_ptr.
+Q0370,Python,Hard,Technical,Data Model,What is __str__ commonly intended to provide?,A user-oriented string representation of an object.
+Q0371,Java,Interview,Interview,Interview,"In Java, which statement best answers: Why is StringBuilder preferred for repeated string concatenation?",It is mutable and can avoid creating many intermediate String objects in repeated concatenation.
+Q0372,Python,Hard,Technical,Advanced,"In Python, which statement best answers: What is a context manager?","An object implementing the context management protocol, usually __enter__ and __exit__, for controlled resource setup and cleanup."
+Q0373,Python,Interview,Interview,Interview,"In Python, which statement best answers: Why use enumerate() instead of manually tracking an index?","It provides an index and value together, improving readability and reducing indexing mistakes."
+Q0374,Python,Easy,Technical,Collections,"In Python, which statement best answers: How do you remove and return the last list item?",Use list.pop().
+Q0375,C,Interview,Interview,Interview,"In C, which statement best answers: Why should free() generally be called exactly once for an allocated block?","Repeatedly freeing the same block is undefined behavior, while never freeing it can leak memory."
+Q0376,C++,Easy,Technical,Operators,Which operator accesses a member through an object?,.
+Q0377,C,Easy,Technical,Basics,What is the size of char in C?,Exactly 1 byte; CHAR_BIT defines how many bits that byte contains.
+Q0378,Python,Medium,Technical,OOP,"In Python, which statement best answers: What is self?",The conventional name for the instance argument passed to instance methods.
+Q0379,HTML,Easy,Technical,Basics,Which element creates a single-line text input?,"The input element, commonly with type=""text""."
+Q0380,C++,Easy,Technical,Basics,What is a reference?,An alias bound to an existing object or function.
+Q0381,C,Interview,Interview,Interview,"In C, which statement best answers: How can a buffer overflow occur in C?","By reading or writing beyond the bounds of an object, often because capacity is not checked."
+Q0382,Python,Hard,Technical,Async,What is an async generator?,A generator function defined with async def that uses yield and can be consumed asynchronously.
+Q0383,C,Easy,Technical,Files,"In C, which statement best answers: Which standard function opens a file?",fopen()
+Q0384,HTML,Easy,Technical,Basics,What is an HTML attribute?,Additional information specified in an element's start tag.
+Q0385,HTML,Hard,Technical,Security,Why does setting innerHTML with untrusted content create XSS risk?,Untrusted markup may be parsed as HTML and potentially create executable content depending on the context.
+Q0386,C++,Interview,Interview,Interview,Why prefer emplace_back over push_back sometimes?,"emplace_back can construct an element directly in the container, potentially avoiding an intermediate object."
+Q0387,Python,Easy,Technical,Strings,How do you convert a string to lowercase?,Use str.lower().
+Q0388,Java,Interview,Interview,Interview,Why use dependency injection in a Java application?,It separates object construction from business logic and improves testability and replaceability.
+Q0389,C,Easy,Technical,Basics,Which function copies one C string to another?,strcpy() from string.h.
+Q0390,Python,Easy,Technical,Operators,What operator performs exponentiation?,**
+Q0391,Python,Hard,Technical,Data Model,Why can implementing __eq__ affect hashability?,Custom equality can change the relationship required between equality and hashing; Python may make a class unhashable when it defines equality without a compatible hash.
+Q0392,HTML,Medium,Technical,Metadata,"What does meta charset=""UTF-8"" specify?",The document's character encoding as UTF-8.
+Q0393,C,Medium,Technical,Storage,What does extern indicate?,That a declaration refers to an object or function defined elsewhere.
+Q0394,CSS,Hard,Technical,Performance,"In CSS, which statement best answers: Why can transform be preferable to changing top/left for animation?","Transforms can often be handled more efficiently by rendering pipelines and avoid some layout work, though performance depends on the situation."
+Q0395,Java,Medium,Technical,Interfaces,"In Java, which statement best answers: Can an interface have default methods?","Yes, interfaces can declare default methods with implementations."
+Q0396,CSS,Hard,Technical,Grid,What is minmax() used for?,It defines a size range with a minimum and maximum track size in CSS Grid.
+Q0397,Java,Medium,Technical,Interfaces,Can an interface have default methods?,"Yes, interfaces can declare default methods with implementations."
+Q0398,C,Hard,Technical,Memory,"In C, which statement best answers: What is undefined behavior?",Behavior for which the C standard imposes no requirements on the program's result.
+Q0399,Java,Easy,Technical,Basics,What is method overriding?,A subclass providing a new implementation of an inherited instance method with a compatible signature.
+Q0400,C,Medium,Technical,Memory,How do malloc() and free() relate?,malloc() allocates dynamic storage; free() releases storage previously allocated by compatible allocation functions.
+Q0401,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: When should you use a button instead of an anchor?",Use button for an action in the current page or application; use an anchor for navigation to a resource or URL.
+Q0402,Java,Easy,Technical,Basics,What is garbage collection?,Automatic reclamation of memory occupied by objects that are no longer reachable.
+Q0403,Python,Hard,Technical,Descriptors,What is a descriptor?,"An object defining methods such as __get__, __set__, or __delete__ that controls attribute access."
+Q0404,CSS,Interview,Interview,Interview,How would you reduce CSS performance problems?,"Avoid excessive selectors and expensive effects, minimize unnecessary style recalculation, and profile actual bottlenecks."
+Q0405,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: Why can fixed heights cause problems?","Content can exceed the fixed height, causing overflow or clipping, especially across different screen sizes and text settings."
+Q0406,Java,Medium,Technical,Generics,What are generics used for?,They provide compile-time type safety and reusable parameterized types.
+Q0407,C,Hard,Technical,Linkage,What does an identifier declared with static at file scope generally have?,Internal linkage.
+Q0408,C,Medium,Technical,Compilation,What is the role of the C preprocessor?,"It performs preprocessing such as macro expansion, header inclusion, and conditional compilation."
+Q0409,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: What is the difference between localStorage and sessionStorage?","Both store string data per origin; localStorage persists across browser sessions, while sessionStorage is associated with a page session."
+Q0410,CSS,Hard,Technical,Layout,What is margin collapsing?,A CSS layout behavior where certain adjoining block margins combine rather than simply add.
+Q0411,Python,Easy,Technical,Operators,"In Python, which statement best answers: What operator performs floor division?",//
+Q0412,Java,Medium,Technical,Static,What is a static method?,A method associated with the class rather than a particular instance.
+Q0413,Python,Medium,Technical,Functions,"If a function reaches the end without executing return, what does it return?",None.
+Q0414,C,Hard,Technical,Advanced,"In C, which statement best answers: What is a flexible array member?","The last member of a structure may be an array with no specified size, allowing extra trailing storage."
+Q0415,C,Interview,Interview,Interview,Why are pointers powerful but risky in C?,"They enable direct memory manipulation and efficient data structures, but invalid arithmetic, lifetime errors, and dereferences can cause undefined behavior."
+Q0416,JavaScript,Easy,Technical,Basics,What is undefined?,"A primitive value indicating that a variable has not been assigned a value or a property is absent, among other cases."
+Q0417,C++,Medium,Technical,Modern C++,What is auto used for?,It lets the compiler deduce a variable's type from its initializer.
+Q0418,C,Hard,Technical,Pointers,"In C, which statement best answers: What is a function pointer?",A pointer that stores the address of a function and can be used to call it.
+Q0419,HTML,Hard,Technical,Performance,Why can too many DOM nodes hurt performance?,"Large DOM trees can increase style calculation, layout, painting, memory use, and scripting overhead."
+Q0420,CSS,Interview,Interview,Interview,Why use CSS custom properties?,"They centralize reusable values, support runtime changes, and make themes easier to maintain."
+Q0421,Python,Easy,Technical,Basics,What is the result of bool([]) in Python?,False
+Q0422,C,Hard,Technical,Advanced,What does volatile tell the compiler?,That accesses to the object are observable and should not be optimized away merely because the compiler sees no apparent change.
+Q0423,HTML,Hard,Technical,Web Platform,"In HTML, which statement best answers: What is the difference between HTML and the DOM?",HTML is markup used to define document structure; the DOM is the in-memory object representation exposed to scripts.
+Q0424,CSS,Easy,Technical,Applied,"If an element uses padding: 10px, is that space inside or outside the border?",Inside the border.
+Q0425,HTML,Medium,Technical,Performance,"Why use loading=""lazy"" on suitable off-screen images?",It can defer fetching images until they are closer to the viewport.
+Q0426,Java,Hard,Technical,JVM,Why can excessive object allocation hurt performance?,It increases allocation and garbage-collection work and may increase memory pressure.
+Q0427,JavaScript,Easy,Technical,Strings,What does toUpperCase() do?,It returns a string converted to uppercase according to JavaScript's string case-conversion rules.
+Q0428,C++,Hard,Technical,Object Model,Why can a destructor be virtual in a base class?,It allows correct destruction through a base-class pointer when the object is actually derived.
+Q0429,Java,Hard,Technical,Collections,What is ConcurrentHashMap?,A thread-safe map designed for concurrent access with substantially better concurrency than synchronizing an entire map.
+Q0430,JavaScript,Easy,Technical,Basics,What is a function?,A callable object representing reusable executable behavior.
+Q0431,Java,Medium,Technical,Collections,"In Java, which statement best answers: What is an Iterator?",An object used to traverse collection elements through methods such as hasNext() and next().
+Q0432,Python,Medium,Technical,OOP,"In Python, which statement best answers: What is @property used for?",It exposes method-based behavior through attribute-style access.
+Q0433,C++,Medium,Technical,STL,What does reserve() do for a vector?,It requests capacity for at least the specified number of elements without changing its size.
+Q0434,Python,Medium,Technical,Functions,What is a positional argument?,An argument matched to a function parameter by its position.
+Q0435,JavaScript,Medium,Technical,Arrays,What does filter() do?,It creates a new array containing elements that pass a predicate.
+Q0436,C++,Interview,Interview,Interview,"In C++, which statement best answers: What is compile-time polymorphism?","Polymorphism resolved during compilation, commonly through templates and function/operator overloading."
+Q0437,HTML,Interview,Interview,SEO,Why can semantic HTML help search engines?,It gives the document clearer structural and content semantics that can improve machine interpretation.
+Q0438,JavaScript,Easy,Technical,Basics,What is an event?,"A notification representing something that happened, such as a click, input, or key press."
+Q0439,Python,Medium,Technical,Files,"In Python, which statement best answers: How do you safely open a file for automatic closing?",Use a with statement around open().
+Q0440,Java,Easy,Technical,Access,"In Java, which statement best answers: Which access modifier is most restrictive?",private
+Q0441,Java,Interview,Interview,Interview,"In Java, which statement best answers: Why should you avoid catching Exception broadly?",It can hide programming errors and make failure handling less precise.
+Q0442,HTML,Hard,Technical,Accessibility,Why should native semantic HTML be preferred over ARIA when possible?,"Native elements provide built-in semantics, keyboard behavior, and browser/assistive-technology integration."
+Q0443,JavaScript,Interview,Interview,Interview,Why validate data on the server even if JavaScript validates it in the browser?,"Client-side validation can be bypassed, so security and integrity checks must be enforced on the trusted server."
+Q0444,Python,Hard,Technical,Concurrency,"In Python, which statement best answers: What is the difference between threading and multiprocessing in Python?","Threads share a process's memory; processes have separate memory spaces, and process-based parallelism can bypass the CPython GIL for CPU-bound work."
+Q0445,Java,Hard,Technical,JVM,What is the heap?,The JVM memory area from which objects and arrays are generally allocated.
+Q0446,C,Hard,Technical,Advanced,What is a flexible array member?,"The last member of a structure may be an array with no specified size, allowing extra trailing storage."
+Q0447,Java,Interview,Interview,Interview,"In Java, which statement best answers: Why are interfaces useful?",They define contracts that decouple callers from concrete implementations and allow multiple implementations.
+Q0448,Java,Hard,Technical,Reflection,"In Java, which statement best answers: What is reflection?","The ability to inspect and interact with classes, methods, fields, and constructors at runtime."
+Q0449,CSS,Easy,Technical,Basics,What property controls space inside an element's border?,padding
+Q0450,C++,Medium,Technical,Applied,"If a class has a private data member, can unrelated code access it directly?","No, not without an allowed access mechanism such as a public member function or friend."
+Q0451,CSS,Easy,Technical,Basics,What property changes horizontal text alignment?,text-align
+Q0452,Java,Medium,Technical,Exceptions,What does throw do?,It explicitly throws a throwable object.
+Q0453,C++,Easy,Technical,Basics,What is STL?,"The C++ Standard Template Library, commonly referring to standard containers, algorithms, iterators, and related utilities."
+Q0454,C,Easy,Technical,Files,Which standard function opens a file?,fopen()
+Q0455,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: Flexbox vs Grid?",Flexbox is primarily one-dimensional; Grid is designed for two-dimensional row-and-column layouts.
+Q0456,HTML,Interview,Interview,Interview,What is the purpose of autocomplete on forms?,It gives browsers hints about the semantic type of user data so they can assist with autofill.
+Q0457,C,Hard,Technical,Advanced,"In C, which statement best answers: What is implementation-defined behavior?",Behavior where the implementation chooses a valid option and documents the choice.
+Q0458,JavaScript,Medium,Technical,Async,"In JavaScript, which statement best answers: What does await do?",It pauses an async function until a Promise is settled and yields its fulfillment value or throws its rejection reason.
+Q0459,C++,Easy,Technical,Operators,"In C++, which statement best answers: Which operator accesses a member through an object?",.
+Q0460,JavaScript,Interview,Interview,Interview,Why should user input be treated as untrusted?,"Attackers can supply crafted data that may cause injection, logic errors, or security vulnerabilities if not validated and safely handled."
+Q0461,JavaScript,Easy,Technical,Strings,"In JavaScript, which statement best answers: What does toUpperCase() do?",It returns a string converted to uppercase according to JavaScript's string case-conversion rules.
+Q0462,Java,Hard,Technical,Concurrency,What is ExecutorService?,An API for managing and executing asynchronous tasks using executor threads.
+Q0463,JavaScript,Easy,Technical,Basics,What is an array?,"An ordered, mutable collection-like object indexed by integer property keys."
+Q0464,C++,Hard,Technical,Templates,What is a variadic template?,A template that can accept a variable number of template arguments or function arguments.
+Q0465,CSS,Easy,Technical,Basics,What is the CSS box model?,"The model consisting of content, padding, border, and margin around an element."
+Q0466,CSS,Medium,Technical,Animations,"In CSS, which statement best answers: What is @keyframes used for?",Defining the intermediate stages of a CSS animation.
+Q0467,Python,Interview,Interview,Interview,How would you structure a maintainable Python project?,"Separate application logic into modules or packages, isolate configuration, define tests, manage dependencies, and keep interfaces clear."
+Q0468,C++,Hard,Technical,Object Model,What is the Rule of Zero?,Prefer designing types so they need none of the special member functions because resource ownership is delegated to RAII types.
+Q0469,Java,Hard,Technical,Collections,"In Java, which statement best answers: Why should hashCode() and equals() be consistent?",Objects that are equal according to equals() must return the same hash code so hash-based collections work correctly.
+Q0470,CSS,Hard,Technical,Advanced,What is :is()?,A functional pseudo-class that matches an element if it matches any selector in its forgiving selector list.
+Q0471,C++,Easy,Technical,Basics,"In C++, which statement best answers: Which header provides std::vector?",<vector>
+Q0472,JavaScript,Medium,Technical,Objects,"In JavaScript, which statement best answers: What is destructuring?",Syntax for extracting values from arrays or properties from objects into variables.
+Q0473,HTML,Medium,Technical,Semantics,What is the difference between div and section?,div is a generic container; section represents a thematic grouping of content.
+Q0474,CSS,Hard,Technical,Stacking,"In CSS, which statement best answers: What is a stacking context?",An isolated group of elements whose stacking order is resolved together within its parent stacking context.
+Q0475,C,Medium,Technical,Applied,"A function has a prototype int add(int, int); what does this declaration tell the compiler?","The function is named add, returns int, and takes two int parameters."
+Q0476,JavaScript,Easy,Technical,Operators,"In JavaScript, which statement best answers: What operator performs strict inequality?",!==
+Q0477,C,Interview,Interview,Interview,Why does C use a null terminator for strings?,"A C string has no stored length, so the terminating null character marks where the character sequence ends."
+Q0478,HTML,Hard,Technical,Performance,Why can lazy loading images improve performance?,"It can defer loading off-screen images until they are likely to be needed, reducing initial network and rendering work."
+Q0479,CSS,Easy,Technical,Basics,What property changes text color?,color
+Q0480,Java,Hard,Technical,Advanced,What is an immutable object?,An object whose observable state cannot change after construction.
+Q0481,C++,Hard,Technical,Memory,What is a dangling reference?,A reference that remains after the object it refers to has been destroyed.
+Q0482,HTML,Medium,Technical,Semantics,"In HTML, which statement best answers: What is the header element for?",Introductory or navigational content for a section or page.
+Q0483,C++,Medium,Technical,Modern C++,What is move semantics?,A mechanism that allows resources to be transferred from temporary or otherwise movable objects instead of copied.
+Q0484,C,Easy,Technical,Basics,Which loop is guaranteed to execute its body at least once?,A do-while loop.
+Q0485,HTML,Interview,Interview,Interview,Why should HTML validation errors be fixed instead of relying on browser recovery?,"Correct markup reduces ambiguity, improves interoperability, accessibility, and maintainability."
+Q0486,C++,Medium,Technical,STL,What is std::map?,"An ordered associative container of key-value pairs, typically implemented as a balanced tree."
+Q0487,HTML,Medium,Technical,Semantics,What is the footer element for?,"Footer content for a sectioning element or the page, such as author or related information."
+Q0488,HTML,Easy,Technical,Forms,"In HTML, which statement best answers: Which element defines an option in a select?",The option element.
+Q0489,HTML,Hard,Technical,Forms,"In HTML, which statement best answers: What is form validation?",Checking whether submitted control values satisfy constraints before processing or submission.
+Q0490,C,Hard,Technical,Advanced,What is the difference between declaration and definition?,A declaration introduces a name and type; a definition provides the entity itself or allocates storage as applicable.
+Q0491,Python,Medium,Technical,Exceptions,"In Python, which statement best answers: What is finally used for?","Code in finally is intended to run whether an exception occurs or not, subject to control-flow termination."
+Q0492,C,Medium,Technical,Preprocessor,"In C, which statement best answers: What does #include do?",It directs the preprocessor to include the contents of another file.
+Q0493,Python,Medium,Technical,OOP,What is __init__?,An initializer method commonly called when a new instance is created.
+Q0494,Java,Interview,Interview,Interview,Why is Java called platform independent?,Java source is compiled to bytecode that can run on JVM implementations available for different platforms.
+Q0495,C++,Easy,Technical,Basics,What is C++?,"A general-purpose programming language that extends C with features including classes, templates, exceptions, and the standard library."
+Q0496,Java,Interview,Interview,Interview,What is dependency injection?,A design technique where an object's dependencies are supplied externally rather than created internally.
+Q0497,CSS,Medium,Technical,Grid,What does gap control?,The spacing between rows and columns in layout systems such as Grid and Flexbox.
+Q0498,C++,Interview,Interview,Interview,"In C++, which statement best answers: Why can raw new/delete be error-prone?","Manual ownership can cause leaks, double deletion, dangling pointers, and exception-safety problems."
+Q0499,JavaScript,Easy,Technical,Arrays,"If const a = [1,2,3]; what does a.length return?",3
+Q0500,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: Why should headings follow a logical structure?","A logical hierarchy improves navigation and comprehension, especially for screen-reader users."
+Q0501,JavaScript,Hard,Technical,Prototypes,What is the prototype chain?,The chain of objects JavaScript follows for inherited property lookup.
+Q0502,Java,Medium,Technical,Exceptions,"In Java, which statement best answers: What does throw do?",It explicitly throws a throwable object.
+Q0503,CSS,Hard,Technical,Responsive,What are container queries?,Queries that apply styles based on the size or characteristics of a containing element rather than only the viewport.
+Q0504,Java,Interview,Interview,Interview,Why can HashMap fail with mutable keys?,Changing a key's state in a way that affects equals() or hashCode() after insertion can make the entry difficult or impossible to retrieve.
+Q0505,HTML,Hard,Technical,Accessibility,"In HTML, which statement best answers: What is the accessible name of a control?",The name exposed to accessibility APIs that identifies the control to assistive technologies.
+Q0506,HTML,Easy,Technical,Basics,Which element represents the most important heading?,The h1 element.
+Q0507,C++,Medium,Technical,Memory,What is unique_ptr?,A smart pointer with exclusive ownership semantics.
+Q0508,HTML,Easy,Technical,Basics,What is HTML used for?,Defining the structure and semantics of web documents.
+Q0509,C,Interview,Interview,Interview,"In C, which statement best answers: What is the difference between stack and heap memory in typical C implementations?","Automatic local objects commonly use stack storage; dynamically allocated objects use heap storage, though the standard does not mandate those physical regions."
+Q0510,Python,Easy,Technical,Basics,What is None?,Python's singleton object representing the absence of a value.
+Q0511,C++,Medium,Technical,STL,What does std::sort require?,Random-access iterators in its classic overloads and a strict weak ordering comparator if one is supplied.
+Q0512,CSS,Medium,Technical,Cascade,What does !important do?,"It gives a declaration increased priority in the cascade, subject to the cascade's importance and origin rules."
+Q0513,JavaScript,Hard,Technical,Advanced,"In JavaScript, which statement best answers: What is a WeakMap?",A key-value collection whose keys must be objects and whose entries do not prevent those keys from being garbage-collected.
+Q0514,C++,Interview,Interview,Interview,Why can raw new/delete be error-prone?,"Manual ownership can cause leaks, double deletion, dangling pointers, and exception-safety problems."
+Q0515,C++,Hard,Technical,Concurrency,What is std::lock_guard?,An RAII wrapper that locks a mutex on construction and unlocks it on destruction.
+Q0516,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: What is the difference between id and class?",id identifies an element uniquely within a document; class groups elements for shared styling or scripting.
+Q0517,HTML,Easy,Technical,Basics,Which element creates an ordered list?,The ol element.
+Q0518,Java,Interview,Interview,Design,Why program to interfaces in Java?,It reduces coupling to concrete classes and makes implementations easier to substitute.
+Q0519,CSS,Easy,Technical,Basics,What does CSS stand for?,Cascading Style Sheets.
+Q0520,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: Why is === generally preferred over ==?",It avoids implicit type coercion and makes equality behavior more explicit.
+Q0521,CSS,Hard,Technical,Layout,"In CSS, which statement best answers: What is margin collapsing?",A CSS layout behavior where certain adjoining block margins combine rather than simply add.
+Q0522,Java,Hard,Technical,JVM,"In Java, which statement best answers: What is stack memory used for?","Each JVM thread has a stack containing frames for method invocations, including local variables and operand stacks."
+Q0523,Python,Medium,Technical,Collections,What is list comprehension?,A compact syntax for constructing lists from an iterable with optional filtering.
+Q0524,HTML,Medium,Technical,Links,"What does rel=""noopener"" help with?",It prevents the opened browsing context from gaining access to the opener through window.opener in supported cases.
+Q0525,Python,Hard,Technical,Data Model,"In Python, which statement best answers: What is __slots__?",A class attribute that can restrict instance attribute storage to declared slots and can reduce per-instance memory overhead.
+Q0526,Java,Hard,Technical,Advanced,"In Java, which statement best answers: What is an immutable object?",An object whose observable state cannot change after construction.
+Q0527,C,Hard,Technical,Memory,"In C, which statement best answers: Why is returning the address of a local automatic variable unsafe?","Its lifetime ends when the function returns, so the pointer becomes invalid."
+Q0528,HTML,Medium,Technical,Semantics,What is the purpose of article?,It represents a self-contained composition that could be independently distributed or reused.
+Q0529,HTML,Interview,Interview,Interview,What is progressive disclosure in UI markup?,"Showing essential information first and revealing additional detail as needed, while preserving accessible semantics and interaction."
+Q0530,CSS,Easy,Technical,Basics,What does display: none do?,It removes the element from the layout and it is not rendered as a displayed box.
+Q0531,C++,Hard,Technical,Concurrency,"In C++, which statement best answers: What is std::mutex?",A standard synchronization primitive used to protect shared data from concurrent access.
+Q0532,Python,Hard,Technical,Concurrency,What is the difference between threading and multiprocessing in Python?,"Threads share a process's memory; processes have separate memory spaces, and process-based parallelism can bypass the CPython GIL for CPU-bound work."
+Q0533,C++,Medium,Technical,Memory,What happens when a unique_ptr is destroyed while owning an object?,Its managed object is destroyed using its deleter.
+Q0534,Python,Hard,Technical,Performance,What is a generator expression?,A lazy expression that produces an iterator instead of constructing the entire result immediately.
+Q0535,C++,Hard,Technical,Advanced,What is undefined behavior in C++?,Behavior for which the C++ standard imposes no requirements.
+Q0536,HTML,Interview,Interview,Interview,What is the difference between id and class?,id identifies an element uniquely within a document; class groups elements for shared styling or scripting.
+Q0537,C,Hard,Technical,Pointers,What does int *p[10] declare?,p as an array of 10 pointers to int.
+Q0538,CSS,Hard,Technical,Cascade,"If two declarations have equal cascade precedence and specificity, which generally wins?",The declaration that occurs later in source order.
+Q0539,C++,Easy,Technical,Basics,Which header provides std::vector?,<vector>
+Q0540,C++,Easy,Technical,Basics,Which header provides std::string?,<string>
+Q0541,Java,Hard,Technical,JVM,"In Java, which statement best answers: What is class loading?","The JVM process of locating, loading, linking, and initializing classes as required."
+Q0542,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: Why avoid excessive !important?",It makes the cascade harder to reason about and can create specificity conflicts that make maintenance difficult.
+Q0543,CSS,Medium,Technical,Variables,"In CSS, which statement best answers: What is a CSS custom property?",A user-defined property written with a -- prefix and accessed using var().
+Q0544,Java,Medium,Technical,Strings,Why is String immutable?,"Its state cannot be changed after construction; this supports safe sharing, hashing, and string-pool behavior."
+Q0545,C,Medium,Technical,Memory,What does realloc() do?,"It changes the size of a previously allocated memory block, possibly moving it."
+Q0546,JavaScript,Medium,Technical,Promises,What is a Promise?,An object representing the eventual completion or failure of an asynchronous operation and its resulting value.
+Q0547,C++,Hard,Technical,Object Model,What is object slicing?,"When a derived object is copied into a base object by value, the derived-specific part is discarded."
+Q0548,HTML,Interview,Interview,Interview,What is an iframe?,An element that embeds another browsing context within the current document.
+Q0549,JavaScript,Medium,Technical,Modules,What is an ES module?,A JavaScript module using import/export syntax with its own module scope.
+Q0550,Python,Hard,Technical,Async,What is asyncio?,Python's standard library framework for asynchronous I/O using an event loop and coroutines.
+Q0551,Java,Medium,Technical,Streams,What is the Java Stream API?,"An API for declarative processing of sequences of elements through operations such as map, filter, and reduce."
+Q0552,CSS,Medium,Technical,Flexbox,"In CSS, which statement best answers: What does flex-direction control?",The main-axis direction of flex items.
+Q0553,Java,Hard,Technical,Collections,Why should hashCode() and equals() be consistent?,Objects that are equal according to equals() must return the same hash code so hash-based collections work correctly.
+Q0554,CSS,Medium,Technical,Transitions,What does transition do?,It animates changes between computed property values over time.
+Q0555,Java,Easy,Technical,Basics,What is a class?,"A blueprint defining fields, methods, constructors, and other members for objects."
+Q0556,Python,Interview,Interview,Interview,"In Python, which statement best answers: What is the difference between is and ==?",is tests object identity; == tests value equality through the equality protocol.
+Q0557,JavaScript,Easy,Technical,Basics,What does == test?,"Loose equality, which can perform type coercion according to JavaScript's equality rules."
+Q0558,CSS,Medium,Technical,Flexbox,What does justify-content control?,Distribution of flex items along the main axis.
+Q0559,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: Promise.all vs Promise.race?",Promise.all waits for all promises and rejects if one rejects; Promise.race settles when the first input promise settles.
+Q0560,HTML,Hard,Technical,Web Platform,What is the difference between HTML and the DOM?,HTML is markup used to define document structure; the DOM is the in-memory object representation exposed to scripts.
+Q0561,Python,Medium,Technical,Collections,"In Python, which statement best answers: What is list comprehension?",A compact syntax for constructing lists from an iterable with optional filtering.
+Q0562,C++,Easy,Technical,Basics,"In C++, which statement best answers: Which header provides std::string?",<string>
+Q0563,JavaScript,Medium,Technical,Arrays,What does reduce() do?,It processes array elements to accumulate them into a single result.
+Q0564,C++,Interview,Interview,Interview,"In C++, which statement best answers: unique_ptr vs shared_ptr?",unique_ptr expresses exclusive ownership with low overhead; shared_ptr provides shared ownership and incurs reference-counting overhead.
+Q0565,Java,Easy,Technical,Basics,What is method overloading?,Defining methods with the same name but different parameter lists in the same class.
+Q0566,Python,Interview,Interview,Interview,When would multiprocessing be useful in Python?,For CPU-bound work when process-based parallelism is appropriate and the overhead of separate processes is acceptable.
+Q0567,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: What is the purpose of the lang attribute?","It identifies the language of document content, helping accessibility tools and other user agents."
+Q0568,Java,Interview,Interview,Interview,"In Java, which statement best answers: What is the difference between == and equals()?","For references, == checks whether two references identify the same object; equals() is a method used for logical equality when properly overridden."
+Q0569,Python,Easy,Technical,Basics,How do you write a comment?,Use # for a single-line comment; triple-quoted strings are not technically comments.
+Q0570,HTML,Interview,Interview,Interview,How do you make images responsive?,"Use responsive sizing and, where appropriate, srcset and sizes or picture for selecting suitable resources."
+Q0571,C++,Medium,Technical,Modern C++,"In C++, which statement best answers: What is an rvalue reference?",A reference type written && that can bind to rvalues and supports move semantics.
+Q0572,C,Easy,Technical,Basics,Which keyword declares a constant variable?,const
+Q0573,CSS,Medium,Technical,Applied,"If display is flex and flex-direction is row, what is the main axis?",The horizontal inline axis in the default writing mode.
+Q0574,JavaScript,Medium,Technical,Objects,Why can object spread be considered a shallow copy?,It copies own enumerable properties to a new object but retains references to nested objects.
+Q0575,Python,Easy,Technical,Collections,"If nums = [10, 20, 30], what is nums[1]?",20
+Q0576,HTML,Medium,Technical,Accessibility,"In HTML, which statement best answers: Why is alt text important?",It provides a text alternative for images when they cannot be perceived visually.
+Q0577,C,Interview,Interview,Interview,What is the difference between stack and heap memory in typical C implementations?,"Automatic local objects commonly use stack storage; dynamically allocated objects use heap storage, though the standard does not mandate those physical regions."
+Q0578,JavaScript,Hard,Technical,This,How is this determined in an arrow function?,Arrow functions do not have their own this; they capture it lexically from the surrounding scope.
+Q0579,CSS,Interview,Interview,Interview,Why use gap instead of margins for layout spacing when possible?,gap expresses spacing between layout items directly and avoids many margin-collapsing or edge-spacing issues.
+Q0580,Java,Easy,Technical,Access,"In Java, which statement best answers: Which access modifier allows package access without a modifier?","Package-private access, when no access modifier is specified."
+Q0581,Python,Medium,Technical,Modules,"In Python, which statement best answers: What is a package?",A way to organize related modules under a package namespace.
+Q0582,C,Medium,Technical,Data Types,What is an enum in C?,A user-defined type consisting of named integer constants.
+Q0583,C++,Interview,Interview,Interview,"In C++, which statement best answers: Why can passing large objects by const reference be useful?",It avoids an unnecessary copy while preventing the called function from modifying the referred object.
+Q0584,C,Interview,Interview,Interview,What would you check first when diagnosing a C memory bug?,"Check compiler warnings and sanitizers, then inspect allocation/lifetime, bounds, pointer validity, and ownership assumptions."
+Q0585,Python,Hard,Technical,Advanced,What is a context manager?,"An object implementing the context management protocol, usually __enter__ and __exit__, for controlled resource setup and cleanup."
+Q0586,CSS,Hard,Technical,Layout,Why can percentage heights behave unexpectedly?,"Percentage heights depend on a definite containing-block height; without one, the percentage may not resolve as expected."
+Q0587,Python,Hard,Technical,Internals,What is the GIL in CPython?,The Global Interpreter Lock historically used by CPython to protect execution of Python bytecode in the standard interpreter build; free-threaded builds also exist in modern Python.
+Q0588,CSS,Interview,Interview,Responsive,Why use max-width on readable text containers?,It can prevent excessively long line lengths and improve reading comfort on wide screens.
+Q0589,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: Why should decorative images often have empty alt text?",An empty alt attribute tells assistive technology the image is decorative so it can be skipped.
+Q0590,C,Medium,Technical,Pointers,"In C, which statement best answers: What is a pointer to pointer?",A pointer whose value is the address of another pointer.
+Q0591,Python,Medium,Technical,Functions,"In Python, which statement best answers: What is a positional argument?",An argument matched to a function parameter by its position.
+Q0592,JavaScript,Interview,Interview,Interview,How would you cancel a fetch request?,Use AbortController and pass its signal to fetch.
+Q0593,HTML,Hard,Technical,Parsing,"In HTML, which statement best answers: What happens when invalid HTML is parsed?",Browsers generally apply defined error-recovery parsing rules rather than simply stopping at the first error.
+Q0594,CSS,Hard,Technical,Advanced,"In CSS, which statement best answers: What is a cascade layer?",A mechanism for organizing declarations into explicit cascade layers with controlled precedence.
+Q0595,C,Hard,Technical,Applied,"If a local variable is declared static inside a function, what happens to its value between calls?",Its stored value persists between calls while its scope remains limited to the block.
+Q0596,HTML,Hard,Technical,Security,"In HTML, which statement best answers: Why is output encoding important?",It helps ensure untrusted data is treated as data rather than executable markup or script in the relevant output context.
+Q0597,JavaScript,Medium,Technical,Arrays,"In JavaScript, which statement best answers: What does filter() do?",It creates a new array containing elements that pass a predicate.
+Q0598,Java,Medium,Technical,Collections,Why is ArrayList usually efficient for indexed reads?,"It stores elements in an array-like contiguous structure, enabling constant-time indexed access."
+Q0599,HTML,Easy,Technical,Basics,Which element creates a hyperlink?,The a element.
+Q0600,Python,Medium,Technical,Files,How do you safely open a file for automatic closing?,Use a with statement around open().
+Q0601,HTML,Medium,Technical,Semantics,What is the header element for?,Introductory or navigational content for a section or page.
+Q0602,Python,Easy,Technical,Basics,Which operator checks membership?,in
+Q0603,Java,Medium,Technical,OOP,Does Java support multiple inheritance of classes?,"No; a class can extend only one class, but it can implement multiple interfaces."
+Q0604,C,Hard,Technical,Types,Why is casting a pointer not a guarantee that dereferencing it is valid?,"The pointed-to address must also satisfy alignment, lifetime, bounds, and effective-type/access rules applicable to the object."
+Q0605,Java,Interview,Interview,Interview,How would you diagnose a Java memory leak?,"Use heap analysis, allocation profiling, and garbage-collection information to identify objects that remain reachable unexpectedly."
+Q0606,JavaScript,Medium,Technical,Functions,"In JavaScript, which statement best answers: What is a higher-order function?","A function that takes functions as arguments, returns a function, or both."
+Q0607,HTML,Interview,Interview,Interview,Why use semantic HTML?,"It improves document structure, accessibility, maintainability, and can help user agents and search engines understand content."
+Q0608,HTML,Medium,Technical,Links,"What does target=""_blank"" commonly do?",It requests opening the linked resource in a new browsing context.
+Q0609,CSS,Medium,Technical,Selectors,What is selector specificity?,The precedence weight used to resolve competing declarations for the same property.
+Q0610,C++,Interview,Interview,Interview,What is dependency inversion in C++ design?,High-level code should depend on abstractions rather than concrete low-level implementations.
+Q0611,HTML,Medium,Technical,Graphics,"In HTML, which statement best answers: What is SVG?","Scalable Vector Graphics, an XML-based vector graphics format integrated with the web platform."
+Q0612,HTML,Hard,Technical,Web Platform,What is progressive enhancement?,"Building a functional baseline first, then adding richer capabilities for browsers or devices that support them."
+Q0613,C++,Hard,Technical,Concurrency,What is std::mutex?,A standard synchronization primitive used to protect shared data from concurrent access.
+Q0614,JavaScript,Interview,Interview,Interview,Why avoid blocking the main JavaScript thread?,"Long-running synchronous work can prevent timely rendering and user-event handling, making the interface unresponsive."
+Q0615,JavaScript,Hard,Technical,Security,Why is DOM-based XSS still possible without a server response containing the payload?,Client-side code can take attacker-controlled data and insert it into an unsafe DOM sink.
+Q0616,C++,Easy,Technical,Basics,What is RAII?,Resource Acquisition Is Initialization: tying resource lifetime to object lifetime.
+Q0617,JavaScript,Easy,Technical,Arrays,"In JavaScript, which statement best answers: How do you remove the last array element?",Use pop().
+Q0618,Java,Medium,Technical,Threads,How can a thread be created in Java?,Common approaches include extending Thread or implementing Runnable; modern Java also provides higher-level concurrency APIs.
+Q0619,C++,Medium,Technical,STL,"In C++, which statement best answers: What is std::map?","An ordered associative container of key-value pairs, typically implemented as a balanced tree."
+Q0620,HTML,Interview,Interview,Semantics,Why use article for self-contained content rather than div?,article communicates the content's semantic independence to user agents and assistive technologies.
+Q0621,HTML,Medium,Technical,Applied,Which element should normally contain the main content of a page?,main
+Q0622,Python,Hard,Technical,Internals,What is garbage collection in Python?,Automatic memory management that primarily uses reference counting in CPython plus a cyclic garbage collector.
+Q0623,JavaScript,Hard,Technical,Event Loop,"If a resolved Promise reaction and a timer callback are both queued, which category is generally processed first?",The Promise reaction microtask is generally processed before the next timer task.
+Q0624,CSS,Medium,Technical,Animations,What is @keyframes used for?,Defining the intermediate stages of a CSS animation.
+Q0625,C,Hard,Technical,Pointers,What is a function pointer?,A pointer that stores the address of a function and can be used to call it.
+Q0626,Java,Medium,Technical,OOP,Why is composition often preferred over inheritance?,Composition can reduce coupling and avoid rigid class hierarchies by assembling behavior from independent components.
+Q0627,Python,Easy,Technical,Basics,What does print() do?,"It writes text representations to a text stream, normally standard output."
+Q0628,JavaScript,Interview,Interview,Interview,Why is === generally preferred over ==?,It avoids implicit type coercion and makes equality behavior more explicit.
+Q0629,CSS,Easy,Technical,Basics,What property adds a border?,border
+Q0630,HTML,Easy,Technical,Basics,What is the purpose of the body element?,It contains the document's rendered content.
+Q0631,HTML,Hard,Technical,Web Platform,What is content security policy?,A browser security policy delivered by HTTP headers or a meta element that restricts sources and types of content a page may load or execute.
+Q0632,C,Medium,Technical,Preprocessor,"In C, which statement best answers: What is a macro?",A preprocessor substitution defined with #define.
+Q0633,C,Medium,Technical,Functions,"In C, which statement best answers: What is a function prototype?","A declaration that specifies a function's name, return type, and parameter types."
+Q0634,Python,Interview,Interview,Interview,"In Python, which statement best answers: Why use virtual environments?",To isolate project dependencies and avoid version conflicts between projects.
+Q0635,Java,Interview,Interview,Interview,Why use interfaces for dependencies?,They reduce coupling and make implementations easier to replace or test.
+Q0636,C++,Hard,Technical,Templates,What is template specialization?,A customized implementation of a template for particular template arguments.
+Q0637,JavaScript,Interview,Interview,Interview,What is the difference between localStorage and sessionStorage?,"Both store string data per origin; localStorage persists across browser sessions, while sessionStorage is associated with a page session."
+Q0638,C++,Interview,Interview,Interview,Why use const correctness?,It makes interfaces clearer and lets the compiler prevent unintended modification.
+Q0639,C,Medium,Technical,Types,What is typedef used for?,It creates an alias name for an existing type.
+Q0640,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: What is responsive typography?",Typography that adapts to viewport or container conditions while maintaining readable sizes and hierarchy.
+Q0641,JavaScript,Easy,Technical,Basics,What does JSON.parse() do?,It parses a JSON string into a JavaScript value.
+Q0642,JavaScript,Medium,Technical,Arrays,"In JavaScript, which statement best answers: What does reduce() do?",It processes array elements to accumulate them into a single result.
+Q0643,CSS,Easy,Technical,Basics,"In CSS, which statement best answers: What property changes line spacing?",line-height
+Q0644,C,Medium,Technical,Memory,What is a memory leak?,Allocated memory that is no longer reachable and therefore cannot be freed by the program.
+Q0645,C,Interview,Interview,Interview,What is the difference between == and = in C?,== compares values; = assigns a value.
+Q0646,HTML,Medium,Technical,Accessibility,Why can a clickable div be inferior to a button?,"A native button provides built-in keyboard interaction, semantics, focus behavior, and accessibility support."
+Q0647,Python,Hard,Technical,Performance,"In Python, which statement best answers: What is a generator expression?",A lazy expression that produces an iterator instead of constructing the entire result immediately.
+Q0648,HTML,Hard,Technical,Security,What is a same-origin policy conceptually?,A browser security model that restricts how documents or scripts from one origin interact with resources from another origin.
+Q0649,CSS,Easy,Technical,Basics,"In CSS, which statement best answers: What property controls transparency?",opacity
+Q0650,HTML,Medium,Technical,Forms,"If an input has required but the user leaves it empty, what happens during constraint validation?",The form fails constraint validation and normally cannot be submitted until the control satisfies the requirement.
+Q0651,Python,Medium,Technical,Typing,What is duck typing?,An approach where an object's suitability is determined by the operations it supports rather than its nominal class.
+Q0652,JavaScript,Easy,Technical,Objects,How do you access an object's property using bracket notation?,Use object[propertyExpression].
+Q0653,HTML,Hard,Technical,Performance,"In HTML, which statement best answers: Why can lazy loading images improve performance?","It can defer loading off-screen images until they are likely to be needed, reducing initial network and rendering work."
+Q0654,Java,Hard,Technical,Concurrency,"In Java, which statement best answers: What is ExecutorService?",An API for managing and executing asynchronous tasks using executor threads.
+Q0655,C,Medium,Technical,Memory,"In C, which statement best answers: What is a dangling pointer?",A pointer that refers to storage whose lifetime has ended.
+Q0656,CSS,Medium,Technical,Layout,Why can min-width: 0 be necessary on a flex item?,It can allow the item to shrink below its automatic minimum size and prevent unwanted overflow.
+Q0657,HTML,Easy,Technical,Basics,What does HTML stand for?,HyperText Markup Language.
+Q0658,C,Hard,Technical,Linkage,What is external linkage?,An identifier with external linkage can refer to the same entity across translation units.
+Q0659,JavaScript,Medium,Technical,Objects,"In JavaScript, which statement best answers: What is optional chaining?","The ?. operator that safely accesses a property, method, or index when the preceding value is nullish."
+Q0660,C,Hard,Technical,Advanced,"In C, which statement best answers: What is the strict aliasing rule concerned with?",It restricts how an object's stored value may be accessed through lvalues of incompatible types.
+Q0661,C++,Medium,Technical,STL,"In C++, which statement best answers: What does reserve() do for a vector?",It requests capacity for at least the specified number of elements without changing its size.
+Q0662,HTML,Easy,Technical,Basics,What does the title element define?,The document title shown in places such as the browser tab.
+Q0663,C++,Medium,Technical,OOP,What is virtual function?,A member function that supports dynamic dispatch when called through a suitable base-class interface.
+Q0664,C,Easy,Technical,Basics,Which operator gives the address of a variable?,The address-of operator &.
+Q0665,JavaScript,Medium,Technical,Async,"In JavaScript, which statement best answers: What does async do to a function?",It makes the function return a Promise and enables await within it.
+Q0666,JavaScript,Hard,Technical,Promises,What is a microtask?,"A job scheduled to run at a microtask checkpoint, such as a Promise reaction."
+Q0667,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: What is the purpose of autocomplete=""off""?","It requests that the browser not autofill or autocomplete the associated form field, although browsers may override such requests in some situations."
+Q0668,Python,Hard,Technical,Applied,"If two variables reference the same mutable list, what happens when one appends to the list?",Both variables observe the changed list because they reference the same object.
+Q0669,CSS,Easy,Technical,Basics,"In CSS, which statement best answers: What property changes horizontal text alignment?",text-align
+Q0670,C++,Medium,Technical,STL,What is an iterator?,An object that provides a generalized way to traverse elements of a range or container.
+Q0671,Python,Hard,Technical,Descriptors,"In Python, which statement best answers: What is a descriptor?","An object defining methods such as __get__, __set__, or __delete__ that controls attribute access."
+Q0672,Python,Hard,Technical,Advanced,"In Python, which statement best answers: What is method resolution order?","The order Python uses to search classes for attributes and methods, especially in inheritance hierarchies."
+Q0673,CSS,Hard,Technical,Performance,Why can transform be preferable to changing top/left for animation?,"Transforms can often be handled more efficiently by rendering pipelines and avoid some layout work, though performance depends on the situation."
+Q0674,JavaScript,Easy,Technical,Basics,What is var?,A legacy variable declaration form with function scope and hoisting semantics different from let and const.
+Q0675,CSS,Hard,Technical,Layout,"In CSS, which statement best answers: What is a containing block?",A reference rectangle used for resolving the position and size of certain positioned or sized elements.
+Q0676,CSS,Interview,Interview,Interview,Why is CSS called cascading?,"When multiple declarations apply, the cascade resolves which declaration wins using factors such as origin, importance, specificity, and source order."
+Q0677,C++,Medium,Technical,Modern C++,What is an rvalue reference?,A reference type written && that can bind to rvalues and supports move semantics.
+Q0678,C,Easy,Technical,Basics,What is a structure in C?,"A user-defined type that groups named members, potentially of different types."
+Q0679,JavaScript,Hard,Technical,This,"In JavaScript, which statement best answers: How is this determined in an arrow function?",Arrow functions do not have their own this; they capture it lexically from the surrounding scope.
+Q0680,HTML,Medium,Technical,Metadata,What does the viewport meta tag commonly control?,"The viewport used by browsers on devices, especially for responsive layouts."
+Q0681,C++,Interview,Interview,Interview,"In C++, which statement best answers: What is the difference between stack and heap allocation in C++?","Automatic objects commonly have automatic storage duration, while dynamic objects use dynamic storage duration managed through allocation mechanisms."
+Q0682,JavaScript,Hard,Technical,Performance,What is debouncing?,Delaying execution until a burst of events has stopped for a specified period.
+Q0683,JavaScript,Interview,Interview,Interview,How would you handle API errors in JavaScript?,"Check HTTP and application-level errors, surface useful user feedback, log appropriately, and implement retries only where safe and justified."
+Q0684,CSS,Medium,Technical,Variables,What is a CSS custom property?,A user-defined property written with a -- prefix and accessed using var().
+Q0685,CSS,Medium,Technical,Layout,"In CSS, which statement best answers: What does box-sizing: border-box do?","It makes the declared width and height include content, padding, and border."
+Q0686,HTML,Medium,Technical,Accessibility,"In HTML, which statement best answers: What is ARIA?",Accessible Rich Internet Applications: attributes and roles that can improve accessibility when native HTML semantics are insufficient.
+Q0687,Java,Hard,Technical,Concurrency,"If two threads increment a shared int without synchronization, is i++ guaranteed atomic?",No; the read-modify-write operation is not guaranteed atomic.
+Q0688,C,Easy,Technical,Arrays,"If int a[5] is declared, what are the valid element indices?",0 through 4.
+Q0689,HTML,Hard,Technical,Security,"In HTML, which statement best answers: What is a same-origin policy conceptually?",A browser security model that restricts how documents or scripts from one origin interact with resources from another origin.
+Q0690,CSS,Hard,Technical,Performance,Why can layout-triggering properties be expensive during animations?,Changing them may require recalculating layout and subsequent paint work rather than only updating composited rendering.
+Q0691,JavaScript,Interview,Interview,Interview,Why use event delegation?,It reduces the number of listeners and naturally handles dynamically added descendants when the event bubbles.
+Q0692,JavaScript,Easy,Technical,Basics,What is a template literal?,A string literal delimited by backticks that can support interpolation and multiline text.
+Q0693,Java,Easy,Technical,Applied,"If int x = 10; is declared, what type is x?",int
+Q0694,Java,Interview,Interview,Interview,Why are interfaces useful?,They define contracts that decouple callers from concrete implementations and allow multiple implementations.
+Q0695,C,Interview,Interview,Interview,Why should scanf() input often be validated carefully?,Incorrect input or unchecked field widths can cause conversion failures or buffer-related problems depending on the conversion.
+Q0696,C,Medium,Technical,Functions,Can C functions be overloaded by parameter list like C++ functions?,No. C does not support function overloading by parameter list.
+Q0697,Python,Interview,Interview,Architecture,Why separate business logic from I/O in Python applications?,"It improves testability, reuse, and maintainability by reducing coupling to external systems."
+Q0698,C,Hard,Technical,Pointers,"In C, which statement best answers: What does int *p[10] declare?",p as an array of 10 pointers to int.
+Q0699,C,Hard,Technical,Advanced,"In C, which statement best answers: What is the difference between declaration and definition?",A declaration introduces a name and type; a definition provides the entity itself or allocates storage as applicable.
+Q0700,JavaScript,Medium,Technical,Promises,What does Promise.allSettled() do?,It waits for all input promises to settle and returns their fulfillment or rejection results.
+Q0701,JavaScript,Hard,Technical,Performance,What is code splitting?,Dividing application code into separately loadable chunks so not all code must be downloaded initially.
+Q0702,C++,Hard,Technical,Concurrency,"In C++, which statement best answers: What is std::atomic?",A standard library facility for atomic operations on supported types.
+Q0703,C,Interview,Interview,Interview,How would you prevent buffer overflows?,"Track buffer sizes explicitly, validate lengths, use bounded APIs appropriately, and test with sanitizers and fuzzing where suitable."
+Q0704,Java,Medium,Technical,Applied,"If a class implements two interfaces, is that permitted?","Yes, a Java class can implement multiple interfaces."
+Q0705,C,Interview,Interview,Interview,Why is C called a middle-level language?,It combines high-level constructs such as functions and structured control with low-level memory and pointer operations.
+Q0706,CSS,Medium,Technical,Flexbox,"In CSS, which statement best answers: What does flex-wrap control?",Whether flex items can wrap onto multiple lines.
+Q0707,C++,Easy,Technical,Basics,What does nullptr represent?,A null pointer value introduced in C++11 with type std::nullptr_t.
+Q0708,CSS,Interview,Interview,Interview,How would you prevent CSS conflicts between components?,"Use scoped naming conventions, component boundaries, cascade layers, or other deliberate isolation strategies."
+Q0709,C,Hard,Technical,Pointers,"In C, which statement best answers: What does int (*p)[10] declare?",p as a pointer to an array of 10 int elements.
+Q0710,Java,Easy,Technical,Basics,What does JRE stand for?,Java Runtime Environment.
+Q0711,C,Hard,Technical,Advanced,What is the purpose of assert()?,"It checks a programmer-specified condition and reports failure when the condition is false, typically in debug builds."
+Q0712,C++,Hard,Technical,Applied,"If a vector reallocates, what can happen to iterators pointing into its old storage?",They can be invalidated.
+Q0713,Java,Hard,Technical,Modern Java,What is Optional?,A container type intended to represent a value that may or may not be present.
+Q0714,JavaScript,Easy,Technical,Basics,What does typeof do?,It returns a string describing the type category of its operand.
+Q0715,HTML,Easy,Technical,Forms,Which input type creates a radio button?,"type=""radio"""
+Q0716,CSS,Medium,Technical,Functions,What does calc() do?,It allows CSS calculations combining compatible values and operators.
+Q0717,CSS,Interview,Interview,Interview,Why can fixed heights cause problems?,"Content can exceed the fixed height, causing overflow or clipping, especially across different screen sizes and text settings."
+Q0718,CSS,Interview,Interview,Interview,What is mobile-first CSS?,Starting with styles for smaller screens and progressively enhancing the layout for larger screens.
+Q0719,Python,Medium,Technical,Collections,Why is tuple hashability useful?,"An immutable tuple can be hashable when all of its elements are hashable, allowing it to be used as a dictionary key or set element."
+Q0720,JavaScript,Hard,Technical,Modules,Why are ES modules useful?,"They provide explicit imports/exports, module scope, dependency structure, and support for static analysis and tooling."
+Q0721,C++,Hard,Technical,Applied,"If a base pointer points to a derived object and the base destructor is virtual, what happens on delete through the base pointer?",The derived destructor is invoked as part of destroying the derived object.
+Q0722,Python,Easy,Technical,Basics,What is a set?,A mutable collection of distinct hashable elements.
+Q0723,JavaScript,Easy,Technical,Basics,What is JavaScript?,A programming language commonly used to add behavior and interactivity to web pages and applications.
+Q0724,CSS,Medium,Technical,Responsive,"In CSS, which statement best answers: What is a media query?",A conditional CSS rule that applies styles based on media features such as viewport width.
+Q0725,JavaScript,Easy,Technical,Basics,How do you declare a block-scoped variable that should not be reassigned?,Use const.
+Q0726,JavaScript,Easy,Technical,Objects,If const o = {x: 10}; what does o.x return?,10
+Q0727,Python,Interview,Interview,Interview,"In Python, which statement best answers: Why is mutable shared state risky in concurrent Python code?","Concurrent operations can observe or modify shared state in unexpected orders, causing race conditions unless synchronization is appropriate."
+Q0728,JavaScript,Medium,Technical,Functions,"In JavaScript, which statement best answers: What is an arrow function?",A function expression using => with lexical this behavior and concise syntax.
+Q0729,HTML,Easy,Technical,Basics,What is an HTML element?,"A complete structural unit, typically consisting of a start tag, content, and end tag where applicable."
+Q0730,C++,Hard,Technical,Templates,Why can concepts improve template diagnostics?,They state template requirements explicitly and allow constraints to be checked before or during overload selection.
+Q0731,CSS,Easy,Technical,Basics,What does visibility: hidden do?,It hides the element while generally preserving its layout space.
+Q0732,C,Easy,Technical,Basics,Which function compares two C strings?,strcmp() from string.h.
+Q0733,Java,Interview,Interview,Interview,"In Java, which statement best answers: Why is Java called platform independent?",Java source is compiled to bytecode that can run on JVM implementations available for different platforms.
+Q0734,CSS,Medium,Technical,Layout,What does box-sizing: border-box do?,"It makes the declared width and height include content, padding, and border."
+Q0735,Java,Medium,Technical,Exceptions,"In Java, which statement best answers: What is the difference between checked and unchecked exceptions?",Checked exceptions are subject to compile-time checking; unchecked exceptions are RuntimeException subclasses or Errors.
+Q0736,Java,Hard,Technical,Concurrency,What is a race condition?,A result that depends on the unpredictable timing or ordering of concurrent operations.
+Q0737,Python,Medium,Technical,Collections,What does sorted(iterable) return?,A new sorted list.
+Q0738,Python,Hard,Technical,Typing,"In Python, which statement best answers: What is a type hint?",Optional annotation that documents or supports tooling for expected types; it is not generally enforced by Python at runtime.
+Q0739,JavaScript,Medium,Technical,Objects,What does Object.keys() return?,An array of an object's own enumerable string-keyed property names.
+Q0740,C,Medium,Technical,Storage,"In C, which statement best answers: What does extern indicate?",That a declaration refers to an object or function defined elsewhere.
+Q0741,C,Medium,Technical,Applied,"A C string is stored in char s[6] = ""Hello""; how many array elements are required for the five letters plus terminator?",Six elements.
+Q0742,C++,Easy,Technical,Basics,What is a destructor?,A special member function called when an object's lifetime ends.
+Q0743,CSS,Interview,Interview,Interview,Why avoid excessive !important?,It makes the cascade harder to reason about and can create specificity conflicts that make maintenance difficult.
+Q0744,CSS,Interview,Interview,Interview,Flexbox vs Grid?,Flexbox is primarily one-dimensional; Grid is designed for two-dimensional row-and-column layouts.
+Q0745,C,Interview,Interview,Interview,When would you prefer calloc() over malloc()?,When you want allocated storage initialized to all-bits-zero and need an array-like allocation interface.
+Q0746,C,Easy,Technical,Operators,Which operator performs bitwise AND in C?,&
+Q0747,Java,Interview,Interview,Interview,Why is StringBuilder preferred for repeated string concatenation?,It is mutable and can avoid creating many intermediate String objects in repeated concatenation.
+Q0748,C,Interview,Interview,Interview,"In C, which statement best answers: What is the purpose of const with a pointer?","It can make the pointed-to object read-only through that pointer, the pointer itself nonmodifiable, or both depending on placement."
+Q0749,C++,Hard,Technical,Memory,"In C++, which statement best answers: What is a dangling reference?",A reference that remains after the object it refers to has been destroyed.
+Q0750,HTML,Hard,Technical,Parsing,What happens when invalid HTML is parsed?,Browsers generally apply defined error-recovery parsing rules rather than simply stopping at the first error.
+Q0751,C,Medium,Technical,Files,What is EOF?,A negative integer value used to indicate end-of-file or an input failure by relevant character-input functions.
+Q0752,C,Medium,Technical,Memory,What is the difference between malloc() and calloc()?,malloc() allocates uninitialized storage; calloc() allocates storage and initializes its bytes to zero.
+Q0753,HTML,Interview,Interview,Interview,"What is the purpose of autocomplete=""off""?","It requests that the browser not autofill or autocomplete the associated form field, although browsers may override such requests in some situations."
+Q0754,Python,Hard,Technical,Data Model,What is __slots__?,A class attribute that can restrict instance attribute storage to declared slots and can reduce per-instance memory overhead.
+Q0755,C++,Medium,Technical,Memory,Why is shared_ptr not a universal replacement for unique_ptr?,Shared ownership has extra overhead and can obscure ownership; unique_ptr expresses exclusive ownership more clearly.
+Q0756,C++,Hard,Technical,Advanced,"In C++, which statement best answers: What is undefined behavior in C++?",Behavior for which the C++ standard imposes no requirements.
+Q0757,Python,Interview,Interview,Interview,What is the difference between is and ==?,is tests object identity; == tests value equality through the equality protocol.
+Q0758,HTML,Hard,Technical,Security,Why is output encoding important?,It helps ensure untrusted data is treated as data rather than executable markup or script in the relevant output context.
+Q0759,C++,Hard,Technical,Templates,"In C++, which statement best answers: What is template specialization?",A customized implementation of a template for particular template arguments.
+Q0760,HTML,Easy,Technical,Basics,Which element defines a table row?,The tr element.
+Q0761,HTML,Easy,Technical,Forms,"In HTML, which statement best answers: Which input type creates a checkbox?","type=""checkbox"""
+Q0762,Python,Easy,Technical,Basics,What is slicing?,"Selecting a sequence or collection portion using start, stop, and optional step syntax."
+Q0763,C++,Hard,Technical,Advanced,"In C++, which statement best answers: What is virtual inheritance used for?",It can ensure a shared virtual base subobject in a diamond inheritance hierarchy.
+Q0764,HTML,Hard,Technical,Performance,"In HTML, which statement best answers: What is preloading?",A resource hint that asks the browser to fetch a resource early because it is expected to be needed soon.
+Q0765,Python,Easy,Technical,Basics,Which keyword defines a function?,def
+Q0766,C++,Interview,Interview,Interview,What is the difference between stack and heap allocation in C++?,"Automatic objects commonly have automatic storage duration, while dynamic objects use dynamic storage duration managed through allocation mechanisms."
+Q0767,Java,Interview,Interview,Interview,"In Java, which statement best answers: What is the purpose of the JVM garbage collector?",To reclaim heap memory occupied by objects that are no longer reachable.
+Q0768,Java,Interview,Interview,Interview,"In Java, which statement best answers: Why can HashMap fail with mutable keys?",Changing a key's state in a way that affects equals() or hashCode() after insertion can make the entry difficult or impossible to retrieve.
+Q0769,CSS,Medium,Technical,Flexbox,What does flex-direction control?,The main-axis direction of flex items.
+Q0770,C++,Hard,Technical,Object Model,What is the Rule of Five?,"If a class needs custom management for one of destructor, copy constructor, copy assignment, move constructor, or move assignment, it may need to explicitly manage all five."
+Q0771,Java,Medium,Technical,JVM,"In Java, which statement best answers: What is JIT compilation?",Just-in-time compilation that compiles frequently executed bytecode into native machine code at runtime.
+Q0772,CSS,Hard,Technical,Responsive,What is a fluid layout?,A layout whose dimensions adapt continuously to available space rather than relying only on fixed dimensions.
+Q0773,JavaScript,Medium,Technical,Async,What does await do?,It pauses an async function until a Promise is settled and yields its fulfillment value or throws its rejection reason.
+Q0774,HTML,Interview,Interview,Interview,Why avoid using tables for page layout?,"Tables are intended for tabular data; using them for layout harms semantics, responsiveness, and accessibility."
+Q0775,C,Medium,Technical,Functions,"In C, which statement best answers: What is recursion?",A function calling itself directly or indirectly until a terminating condition is reached.
+Q0776,JavaScript,Hard,Technical,Security,"In JavaScript, which statement best answers: What is CORS?",A browser security mechanism that controls cross-origin requests using HTTP response headers and related rules.
+Q0777,JavaScript,Easy,Technical,Arrays,How do you remove the last array element?,Use pop().
+Q0778,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: What is the purpose of autocomplete on forms?",It gives browsers hints about the semantic type of user data so they can assist with autofill.
+Q0779,JavaScript,Medium,Technical,Async,What does async do to a function?,It makes the function return a Promise and enables await within it.
+Q0780,Python,Medium,Technical,Applied,"If a dictionary contains {'name':'A'}, what does d.get('age', 0) return when age is absent?",0
+Q0781,HTML,Medium,Technical,Media,Which element embeds audio content?,The audio element.
+Q0782,Java,Easy,Technical,Basics,What is String in Java?,An immutable class representing sequences of characters.
+Q0783,C++,Interview,Interview,Interview,unique_ptr vs shared_ptr?,unique_ptr expresses exclusive ownership with low overhead; shared_ptr provides shared ownership and incurs reference-counting overhead.
+Q0784,Java,Interview,Interview,Interview,What makes an API backward compatible?,Existing clients can continue using supported contracts without breaking changes to required behavior or interfaces.
+Q0785,Java,Hard,Technical,JVM,Why does Java bytecode help portability?,The bytecode targets the JVM specification rather than a single CPU instruction set.
+Q0786,C++,Interview,Interview,Interview,How would you make a C++ API safer?,"Use RAII types, const correctness, strong types, clear ownership semantics, bounds-aware interfaces, and exceptions or error handling consistently."
+Q0787,JavaScript,Hard,Technical,Security,What is CORS?,A browser security mechanism that controls cross-origin requests using HTTP response headers and related rules.
+Q0788,C++,Easy,Technical,Basics,What is encapsulation?,Bundling data and operations while controlling access to implementation details.
+Q0789,CSS,Easy,Technical,Basics,What is Flexbox?,A one-dimensional layout model for arranging items along a main axis and cross axis.
+Q0790,CSS,Medium,Technical,Transitions,"In CSS, which statement best answers: What does transition do?",It animates changes between computed property values over time.
+Q0791,C++,Medium,Technical,Modern C++,"In C++, which statement best answers: What is a lambda?",An unnamed function object expression that can capture surrounding variables.
+Q0792,JavaScript,Easy,Technical,Basics,What does JSON stand for?,JavaScript Object Notation.
+Q0793,JavaScript,Interview,Interview,Interview,var vs let vs const?,"var is function-scoped; let and const are block-scoped. const prevents reassignment of the binding, while object contents can still be mutable."
+Q0794,Java,Easy,Technical,Operators,"In Java, which statement best answers: Which keyword creates a subclass relationship?",extends
+Q0795,CSS,Medium,Technical,Layout,Why is box-sizing: border-box often convenient for responsive layouts?,"Declared dimensions include padding and borders, making size calculations more predictable."
+Q0796,JavaScript,Easy,Technical,Operators,What operator performs strict inequality?,!==
+Q0797,Python,Medium,Technical,Collections,Why are dictionary keys required to be hashable?,Dictionary lookup relies on hashing and equality to locate keys.
+Q0798,Python,Easy,Technical,Basics,What does type() return?,The type of an object.
+Q0799,HTML,Hard,Technical,Web Components,What is Shadow DOM?,A DOM encapsulation mechanism that lets components have an isolated DOM subtree and styling boundary.
+Q0800,CSS,Easy,Technical,Basics,What is CSS used for?,Styling and laying out web documents.
+Q0801,CSS,Interview,Interview,Interview,Why use rem for typography?,"It provides sizing relative to the root font size, supporting consistent scaling and user font-size preferences."
+Q0802,HTML,Interview,Interview,Interview,Why is keyboard accessibility important?,"Some users navigate without a mouse, so interactive controls must be operable and understandable through keyboard input."
+Q0803,Java,Hard,Technical,Advanced,"In Java, which statement best answers: What is a functional interface?","An interface with exactly one abstract method, suitable as a target for lambda expressions."
+Q0804,C++,Easy,Technical,Basics,What is vector?,A dynamic contiguous sequence container from the C++ standard library.
+Q0805,CSS,Interview,Interview,Interview,Why use design tokens through CSS custom properties?,They centralize visual decisions such as spacing and colors and make consistent theme changes easier.
+Q0806,CSS,Hard,Technical,Cascade,Why can cascade layers improve large stylesheets?,"They provide explicit ordering between groups of rules, reducing dependence on selector specificity hacks."
+Q0807,Java,Interview,Interview,Interview,What is the difference between == and equals()?,"For references, == checks whether two references identify the same object; equals() is a method used for logical equality when properly overridden."
+Q0808,CSS,Hard,Technical,Applied,"If :where(.card) and .card both target the same element, which selector contributes lower specificity?",:where(.card) contributes zero specificity.
+Q0809,Python,Interview,Interview,Interview,"In Python, which statement best answers: How do you improve Python performance?","Profile first, then optimize algorithms and data structures, reduce unnecessary work, use efficient libraries, and consider concurrency or compiled/native approaches where appropriate."
+Q0810,C,Interview,Interview,Interview,Why are compiler warnings important in C?,They can identify suspicious constructs and potential defects before the program runs.
+Q0811,C++,Hard,Technical,Templates,Why are templates generally instantiated from source-visible definitions?,The compiler usually needs the template definition available when it instantiates the requested specialization.
+Q0812,C++,Easy,Technical,Basics,What is a template?,A mechanism for writing generic code parameterized by types or values.
+Q0813,HTML,Interview,Interview,Interview,How would you improve accessibility of a form?,"Use native controls, associated labels, logical grouping, keyboard accessibility, meaningful errors, and appropriate semantics."
+Q0814,C,Easy,Technical,Operators,"In C, which statement best answers: Which operator performs bitwise AND in C?",&
+Q0815,CSS,Easy,Technical,Basics,What is a pseudo-class?,"A selector that targets an element based on a state or condition, such as :hover."
+Q0816,C,Hard,Technical,Advanced,What is implementation-defined behavior?,Behavior where the implementation chooses a valid option and documents the choice.
+Q0817,HTML,Medium,Technical,Forms,"In HTML, which statement best answers: What does the name attribute of a form control affect?",It provides the control's name used when its value is submitted as form data.
+Q0818,CSS,Hard,Technical,Architecture,What is BEM?,"A naming methodology using Block, Element, and Modifier concepts for maintainable CSS class names."
+Q0819,HTML,Easy,Technical,Basics,"In HTML, which statement best answers: What does HTML stand for?",HyperText Markup Language.
+Q0820,Python,Easy,Technical,Collections,How do you add an item to the end of a list?,Use list.append(item).
+Q0821,C,Interview,Interview,Interview,What is the purpose of const with a pointer?,"It can make the pointed-to object read-only through that pointer, the pointer itself nonmodifiable, or both depending on placement."
+Q0822,HTML,Medium,Technical,Forms,What does the name attribute of a form control affect?,It provides the control's name used when its value is submitted as form data.
+Q0823,C++,Hard,Technical,Memory,"In C++, which statement best answers: What is a use-after-free?",Accessing an object or allocation after its lifetime or allocation has ended.
+Q0824,Java,Hard,Technical,Concurrency,Why does volatile not make count++ atomic?,"The increment consists of multiple operations: read, modify, and write."
+Q0825,Java,Medium,Technical,JVM,"In Java, which statement best answers: What is bytecode?",Platform-independent instructions stored in class files and executed or compiled by the JVM.
+Q0826,JavaScript,Medium,Technical,Objects,Why can optional chaining return undefined instead of throwing?,"If the value before ?. is nullish, the chain short-circuits and produces undefined."
+Q0827,C,Easy,Technical,Operators,"In C, which statement best answers: Which operator performs logical OR in C?",||
+Q0828,HTML,Interview,Interview,Interview,Why should headings follow a logical structure?,"A logical hierarchy improves navigation and comprehension, especially for screen-reader users."
+Q0829,HTML,Hard,Technical,Performance,What is preloading?,A resource hint that asks the browser to fetch a resource early because it is expected to be needed soon.
+Q0830,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: Why use button type=""submit"" inside a form?",It explicitly creates a submit control for the form and participates in form submission behavior.
+Q0831,C,Interview,Interview,Interview,"In C, which statement best answers: Why does C use a null terminator for strings?","A C string has no stored length, so the terminating null character marks where the character sequence ends."
+Q0832,Java,Hard,Technical,Advanced,"In Java, which statement best answers: What is CompletableFuture?",A class for representing and composing asynchronous computations.
+Q0833,CSS,Interview,Interview,Interview,How can you debug a CSS layout?,"Use browser developer tools to inspect computed styles, box-model dimensions, layout overlays, specificity, and the cascade."
+Q0834,C,Easy,Technical,Control Flow,"In C, which statement best answers: Which statement is commonly used for a conditional branch?",if
+Q0835,CSS,Hard,Technical,Selectors,Why can :where() be useful for low-specificity component styles?,"Its selectors contribute zero specificity, making later overrides easier."
+Q0836,Java,Medium,Technical,Threads,What is a thread?,A lightweight unit of execution within a process.
+Q0837,CSS,Easy,Technical,Basics,"In CSS, which statement best answers: What property changes letter spacing?",letter-spacing
+Q0838,C++,Hard,Technical,Advanced,What is copy elision?,An optimization or language-guaranteed omission of certain object copies or moves in permitted cases.
+Q0839,JavaScript,Hard,Technical,Prototypes,What is prototypal inheritance?,Inheritance based on objects delegating property lookup to prototype objects.
+Q0840,JavaScript,Hard,Technical,Security,What is XSS?,A vulnerability where attacker-controlled input can cause unintended script execution in a user's browser.
+Q0841,C,Easy,Technical,Files,Which standard function closes a file?,fclose()
+Q0842,Java,Interview,Interview,Interview,What happens if main() is not public?,The standard Java launcher will not accept it as the conventional application entry point.
+Q0843,C++,Interview,Interview,Performance,Why does cache locality matter in C++?,Contiguous or predictable memory access can reduce cache misses and improve practical performance.
+Q0844,C++,Hard,Technical,Modern C++,What is perfect forwarding?,"Preserving the value category of arguments when forwarding them, typically using std::forward."
+Q0845,Java,Easy,Technical,Interfaces,Which keyword declares that a class implements an interface?,implements
+Q0846,JavaScript,Interview,Interview,Interview,How would you optimize a slow JavaScript page?,"Profile first, then reduce main-thread work, optimize algorithms, avoid unnecessary DOM work, split code, and use asynchronous scheduling where appropriate."
+Q0847,C,Interview,Interview,Interview,"In C, which statement best answers: What is the difference between == and = in C?",== compares values; = assigns a value.
+Q0848,Java,Medium,Technical,Exceptions,What does throws do?,It declares exceptions that a method may propagate to its caller.
+Q0849,C++,Medium,Technical,STL,Why is vector often preferred over a linked list for sequential storage?,Its contiguous storage provides good cache locality and constant-time indexing.
+Q0850,Python,Hard,Technical,Iterators,Why can an iterator be exhausted?,Iterators maintain traversal state and next() eventually raises StopIteration after all available items are consumed.
+Q0851,C,Hard,Technical,Advanced,"In C, which statement best answers: What does volatile tell the compiler?",That accesses to the object are observable and should not be optimized away merely because the compiler sees no apparent change.
+Q0852,C++,Medium,Technical,STL,"In C++, which statement best answers: What does std::sort require?",Random-access iterators in its classic overloads and a strict weak ordering comparator if one is supplied.
+Q0853,CSS,Medium,Technical,Responsive,What is a media query?,A conditional CSS rule that applies styles based on media features such as viewport width.
+Q0854,Python,Easy,Technical,Basics,What is Python?,"A high-level, general-purpose programming language with dynamic typing and automatic memory management."
+Q0855,HTML,Easy,Technical,Basics,Which element embeds an image?,The img element.
+Q0856,JavaScript,Hard,Technical,Runtime,Why can a long synchronous loop freeze a browser UI?,It occupies the main thread and prevents timely processing of rendering and user-event tasks.
+Q0857,HTML,Easy,Technical,Forms,"In HTML, which statement best answers: Which element creates a dropdown list?",The select element.
+Q0858,C,Medium,Technical,Pointers,"If p is an int pointer, what does p + 1 point to conceptually?","The next int object position in the array object that p points into, when such pointer arithmetic is valid."
+Q0859,Python,Easy,Technical,Basics,What is a dictionary?,A mutable mapping of keys to values.
+Q0860,HTML,Interview,Interview,Interview,Why is alt text not simply an image title?,"Alt text serves as the text alternative for the image's meaning; a title attribute has a different, optional tooltip-oriented role."
+Q0861,C,Easy,Technical,Operators,Which operator is used for the ternary conditional expression?,The conditional operator ?:
+Q0862,Python,Interview,Interview,Interview,Why are mutable default arguments dangerous?,"A default object is created once when the function is defined, so mutations can persist across calls."
+Q0863,C++,Easy,Technical,Basics,What is a constructor?,A special member function used to initialize an object.
+Q0864,C++,Hard,Technical,Templates,What are concepts in C++20?,Compile-time constraints that specify requirements on template arguments.
+Q0865,HTML,Medium,Technical,Accessibility,Why is alt text important?,It provides a text alternative for images when they cannot be perceived visually.
+Q0866,HTML,Medium,Technical,Links,"In HTML, which statement best answers: What does rel=""noopener"" help with?",It prevents the opened browsing context from gaining access to the opener through window.opener in supported cases.
+Q0867,CSS,Hard,Technical,Cascade,"In CSS, which statement best answers: How is specificity generally compared?","Selectors are compared by their specificity components, with origin/importance and source order also participating in the cascade."
+Q0868,CSS,Hard,Technical,Responsive,"In CSS, which statement best answers: What is a fluid layout?",A layout whose dimensions adapt continuously to available space rather than relying only on fixed dimensions.
+Q0869,C++,Easy,Technical,Basics,What is a class in C++?,"A user-defined type containing data members and member functions, with private access by default."
+Q0870,HTML,Easy,Technical,Basics,Which attribute supplies alternative text for an image?,The alt attribute.
+Q0871,Java,Easy,Technical,Operators,Which keyword creates a subclass relationship?,extends
+Q0872,JavaScript,Medium,Technical,Web,"In JavaScript, which statement best answers: What is event bubbling?",An event propagation phase where an event moves from the target upward through ancestor elements.
+Q0873,JavaScript,Hard,Technical,Runtime,"In JavaScript, which statement best answers: What is the call stack?",The execution stack tracking active function calls.
+Q0874,Python,Interview,Interview,Interview,What makes Python dynamically typed?,Names are not declared with fixed static types; objects have types and names can be rebound to objects of different types.
+Q0875,Python,Easy,Technical,Basics,How do you handle exceptions?,"Using constructs such as try, except, else, and finally."
+Q0876,CSS,Medium,Technical,Functions,"In CSS, which statement best answers: What does calc() do?",It allows CSS calculations combining compatible values and operators.
+Q0877,Python,Easy,Technical,Strings,"In Python, which statement best answers: How do you convert a string to lowercase?",Use str.lower().
+Q0878,Java,Medium,Technical,Collections,"If a HashSet receives the same element twice according to equals() and hashCode(), how many distinct elements does it keep?",One.
+Q0879,JavaScript,Medium,Technical,Objects,What does Object.values() return?,An array of an object's own enumerable string-keyed property values.
+Q0880,JavaScript,Interview,Interview,Interview,What causes a memory leak in JavaScript?,"Objects remain reachable unnecessarily, such as through lingering listeners, timers, caches, or global references."
+Q0881,JavaScript,Easy,Technical,Basics,What does addEventListener() do?,It registers an event listener for a specified event type on an EventTarget.
+Q0882,HTML,Hard,Technical,Accessibility,"In HTML, which statement best answers: Why should native semantic HTML be preferred over ARIA when possible?","Native elements provide built-in semantics, keyboard behavior, and browser/assistive-technology integration."
+Q0883,CSS,Interview,Interview,Interview,What is responsive typography?,Typography that adapts to viewport or container conditions while maintaining readable sizes and hierarchy.
+Q0884,C,Easy,Technical,Operators,Which operator performs logical OR in C?,||
+Q0885,C,Interview,Interview,Interview,What is the advantage of separating interface and implementation in C?,Header files can expose stable declarations while source files hide implementation details and reduce coupling.
+Q0886,C++,Interview,Interview,Interview,Why are sanitizers valuable in C++?,They instrument programs to detect classes of runtime memory and undefined-behavior errors with actionable diagnostics.
+Q0887,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: What causes a memory leak in JavaScript?","Objects remain reachable unnecessarily, such as through lingering listeners, timers, caches, or global references."
+Q0888,Python,Interview,Interview,Interview,Why use enumerate() instead of manually tracking an index?,"It provides an index and value together, improving readability and reducing indexing mistakes."
+Q0889,CSS,Hard,Technical,Advanced,What is :where()?,"A functional pseudo-class like :is(), but its selector specificity is zero."
+Q0890,C++,Easy,Technical,Basics,What is inheritance?,A mechanism for deriving a class from one or more base classes.
+Q0891,JavaScript,Hard,Technical,Applied,"If an arrow function is used as an object method, does it get its own dynamic this?",No; arrow functions capture this lexically.
+Q0892,HTML,Interview,Interview,Interview,"In HTML, which statement best answers: What is an iframe?",An element that embeds another browsing context within the current document.
+Q0893,C++,Hard,Technical,Advanced,What is virtual inheritance used for?,It can ensure a shared virtual base subobject in a diamond inheritance hierarchy.
+Q0894,Python,Medium,Technical,Exceptions,What does raise do?,It raises an exception or re-raises the currently handled exception.
+Q0895,Java,Interview,Interview,Interview,Why should you avoid catching Exception broadly?,It can hide programming errors and make failure handling less precise.
+Q0896,Python,Interview,Interview,Interview,Why avoid bare except in production code?,It can catch exceptions such as KeyboardInterrupt and SystemExit and can hide unexpected failures.
+Q0897,Java,Easy,Technical,Basics,Which keyword creates an object?,new
+Q0898,Java,Medium,Technical,Static,"In Java, which statement best answers: What is a static method?",A method associated with the class rather than a particular instance.
+Q0899,CSS,Medium,Technical,Colors,"In CSS, which statement best answers: What is rgba()?","A color function representing red, green, blue, and alpha transparency."
+Q0900,C,Interview,Interview,Interview,What compiler warnings should be enabled for production-quality C development?,"Use a strong warning set appropriate to the compiler, commonly including high warning levels and warnings treated as errors where practical."
+Q0901,HTML,Medium,Technical,Semantics,What is the purpose of main?,It represents the dominant content of the document.
+Q0902,Python,Easy,Technical,Applied,"If x = [1, 2] and x.append(3) is called, what is x?","[1, 2, 3]"
+Q0903,JavaScript,Medium,Technical,Objects,What is destructuring?,Syntax for extracting values from arrays or properties from objects into variables.
+Q0904,Java,Hard,Technical,JVM,What is stack memory used for?,"Each JVM thread has a stack containing frames for method invocations, including local variables and operand stacks."
+Q0905,Python,Medium,Technical,Generators,What does yield do?,It produces a value from a generator function and suspends its execution until resumed.
+Q0906,C,Hard,Technical,Compilation,Why can a program compile successfully but fail at link time?,"Compilation creates object files, while linking must resolve references among object files and libraries."
+Q0907,Python,Interview,Interview,Interview,"In Python, which statement best answers: When should you use a tuple instead of a list?",When you need an immutable sequence or want to communicate that the collection should not be changed.
+Q0908,Python,Medium,Technical,Strings,Why are Python strings immutable?,Their contents cannot be changed in place; operations that appear to modify them create or return another string.
+Q0909,HTML,Medium,Technical,Semantics,What is the purpose of the nav element?,It represents a section of navigation links.
+Q0910,CSS,Interview,Interview,Maintainability,Why avoid deeply nested selectors?,They increase coupling to markup structure and can make specificity and overrides harder to manage.
+Q0911,CSS,Medium,Technical,Colors,What is rgba()?,"A color function representing red, green, blue, and alpha transparency."
+Q0912,JavaScript,Hard,Technical,Promises,"In JavaScript, which statement best answers: Why can Promise callbacks run before a timer callback?","Promise reactions are microtasks, which are generally processed before the next task such as a timer callback."
+Q0913,JavaScript,Medium,Technical,Web,What is event bubbling?,An event propagation phase where an event moves from the target upward through ancestor elements.
+Q0914,C++,Medium,Technical,STL,"In C++, which statement best answers: What does std::vector::capacity() represent?",The number of elements the vector can hold in its allocated storage without reallocating.
+Q0915,C,Medium,Technical,Memory,"If malloc() returns NULL, what does that indicate?",The requested allocation could not be provided.
+Q0916,C++,Medium,Technical,Modern C++,"In C++, which statement best answers: What does constexpr indicate?",It declares an entity or function intended to be usable in constant evaluation when its conditions permit.
+Q0917,HTML,Easy,Technical,Basics,Which element creates an unordered list?,The ul element.
+Q0918,Java,Hard,Technical,Generics,Why can't Java generics directly use primitive type arguments?,"Java generics operate on reference types, so wrapper types such as Integer are used for primitive values."
+Q0919,C,Hard,Technical,Advanced,What does the static keyword at file scope affect?,It gives an object or function internal linkage.
+Q0920,Java,Medium,Technical,JVM,What is bytecode?,Platform-independent instructions stored in class files and executed or compiled by the JVM.
+Q0921,HTML,Hard,Technical,Web Components,"In HTML, which statement best answers: What is Shadow DOM?",A DOM encapsulation mechanism that lets components have an isolated DOM subtree and styling boundary.
+Q0922,CSS,Hard,Technical,Advanced,What does contain do in CSS?,"It can establish containment boundaries that allow browsers to limit layout, paint, size, or style work depending on the containment type."
+Q0923,HTML,Easy,Technical,Basics,What is the purpose of the head element?,It contains metadata and resource links for the document.
+Q0924,CSS,Hard,Technical,Selectors,What does the general sibling combinator ~ select?,Following siblings that share the same parent.
+Q0925,C++,Hard,Technical,Object Model,"In C++, which statement best answers: What is the Rule of Zero?",Prefer designing types so they need none of the special member functions because resource ownership is delegated to RAII types.
+Q0926,Java,Medium,Technical,Collections,What is HashMap?,A map implementation that stores key-value mappings using hashing.
+Q0927,HTML,Easy,Technical,Basics,Which element defines a table cell?,The td element.
+Q0928,JavaScript,Hard,Technical,Advanced,"In JavaScript, which statement best answers: What is a Symbol?","A primitive type used to create unique values, often used as property keys."
+Q0929,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: How do you center an item with Flexbox?",A common approach is display:flex with justify-content:center and align-items:center on the container.
+Q0930,Python,Interview,Interview,Interview,When should you use a tuple instead of a list?,When you need an immutable sequence or want to communicate that the collection should not be changed.
+Q0931,Python,Interview,Interview,Interview,"In Python, which statement best answers: What is the difference between shallow and deep copy?",A shallow copy duplicates the outer container while retaining references to nested objects; a deep copy recursively copies nested objects.
+Q0932,JavaScript,Easy,Technical,Basics,What is the DOM?,The Document Object Model representing a document as objects and nodes accessible to scripts.
+Q0933,HTML,Medium,Technical,Graphics,"In HTML, which statement best answers: What is canvas used for?","Script-driven, pixel-based drawing and graphics."
+Q0934,C,Hard,Technical,Advanced,"In C, which statement best answers: What does the static keyword at file scope affect?",It gives an object or function internal linkage.
+Q0935,Python,Interview,Interview,Interview,"In Python, which statement best answers: Why are mutable default arguments dangerous?","A default object is created once when the function is defined, so mutations can persist across calls."
+Q0936,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: var vs let vs const?","var is function-scoped; let and const are block-scoped. const prevents reassignment of the binding, while object contents can still be mutable."
+Q0937,Python,Interview,Interview,Interview,Why is Python popular for data science?,"It has a large ecosystem for numerical computing, data analysis, visualization, machine learning, and rapid experimentation."
+Q0938,CSS,Interview,Interview,Interview,What is the benefit of using logical properties?,"They adapt styling to writing modes and directions, improving internationalization and reducing directional assumptions."
+Q0939,CSS,Hard,Technical,Grid,What does auto-fit do in a repeat() grid pattern?,"It allows the browser to fit as many tracks as possible into the available space, collapsing empty tracks where appropriate."
+Q0940,Python,Interview,Interview,Interview,How do you improve Python performance?,"Profile first, then optimize algorithms and data structures, reduce unnecessary work, use efficient libraries, and consider concurrency or compiled/native approaches where appropriate."
+Q0941,JavaScript,Medium,Technical,Arrays,What does map() do?,It creates a new array containing the results of calling a function on each element.
+Q0942,JavaScript,Hard,Technical,Runtime,What is the event loop?,A runtime mechanism that coordinates execution of JavaScript jobs with task and microtask queues and host events.
+Q0943,HTML,Medium,Technical,Graphics,What is SVG?,"Scalable Vector Graphics, an XML-based vector graphics format integrated with the web platform."
+Q0944,JavaScript,Hard,Technical,Applied,"If a Promise is already fulfilled, when does a .then callback normally run?",As a microtask after the current synchronous execution completes.
+Q0945,HTML,Hard,Technical,Applied,"If a link opens a new browsing context, why can rel=""noopener"" be useful?",It prevents the opened context from accessing the opener through window.opener in supported cases.
+Q0946,Python,Interview,Interview,Interview,"In Python, which statement best answers: What makes Python dynamically typed?",Names are not declared with fixed static types; objects have types and names can be rebound to objects of different types.
+Q0947,C++,Medium,Technical,STL,What is std::unordered_map?,A hash-based associative container providing average constant-time lookup under suitable hashing.
+Q0948,C++,Interview,Interview,Interview,What is the advantage of constexpr?,It enables computations or values to be evaluated at compile time when the expression satisfies constant-evaluation requirements.
+Q0949,C++,Hard,Technical,Concurrency,What is std::atomic?,A standard library facility for atomic operations on supported types.
+Q0950,C,Interview,Interview,Interview,"In C, which statement best answers: Why is C called a middle-level language?",It combines high-level constructs such as functions and structured control with low-level memory and pointer operations.
+Q0951,CSS,Easy,Technical,Basics,What property controls transparency?,opacity
+Q0952,JavaScript,Hard,Technical,Advanced,"In JavaScript, which statement best answers: What is event delegation?",Handling events on a common ancestor instead of attaching separate handlers to every descendant.
+Q0953,C,Interview,Interview,Interview,Why are sanitizers useful when debugging C?,"They can detect runtime errors such as out-of-bounds access, use-after-free, and some memory leaks."
+Q0954,C,Easy,Technical,Basics,What is a NULL pointer?,A pointer value that represents that it points to no valid object or function.
+Q0955,JavaScript,Hard,Technical,Performance,"In JavaScript, which statement best answers: What is throttling?",Limiting how frequently a function can execute during a continuous stream of events.
+Q0956,C++,Easy,Technical,Basics,What is operator overloading?,Defining how operators behave for user-defined types.
+Q0957,Python,Easy,Technical,Basics,What is a Boolean in Python?,"An object of type bool, with the values True and False."
+Q0958,CSS,Hard,Technical,Selectors,What does the adjacent sibling combinator + select?,An element immediately following the specified sibling.
+Q0959,JavaScript,Interview,Interview,Interview,"In JavaScript, which statement best answers: What is the difference between synchronous and asynchronous code?",Synchronous execution proceeds in the current flow; asynchronous operations allow other work to be scheduled while waiting for completion.
+Q0960,C,Medium,Technical,Compilation,"In C, which statement best answers: What is the role of the C preprocessor?","It performs preprocessing such as macro expansion, header inclusion, and conditional compilation."
+Q0961,Python,Medium,Technical,Collections,"If d = {'a': 1}, what does d.get('b') return when no default is supplied?",None.
+Q0962,Python,Hard,Technical,Decorators,"In Python, which statement best answers: What is a decorator?",A callable that takes another callable and returns a modified or wrapped callable.
+Q0963,C++,Hard,Technical,Templates,"In C++, which statement best answers: What is a variadic template?",A template that can accept a variable number of template arguments or function arguments.
+Q0964,JavaScript,Hard,Technical,Security,"In JavaScript, which statement best answers: What is XSS?",A vulnerability where attacker-controlled input can cause unintended script execution in a user's browser.
+Q0965,Python,Hard,Technical,Data Model,What is __repr__ commonly intended to provide?,A developer-oriented string representation of an object.
+Q0966,C,Easy,Technical,Basics,What is the entry point of a standard C program?,"The main function, written as main()."
+Q0967,C++,Interview,Interview,Interview,How would you debug a C++ use-after-free?,"Use sanitizers such as AddressSanitizer, inspect ownership and object lifetime, and identify the invalid access path."
+Q0968,Python,Easy,Technical,Basics,Which keyword imports a module?,import
+Q0969,C,Medium,Technical,Preprocessor,What is a macro?,A preprocessor substitution defined with #define.
+Q0970,JavaScript,Medium,Technical,Objects,What does Object.entries() return?,"An array of [key, value] pairs for an object's own enumerable string-keyed properties."
+Q0971,Java,Interview,Interview,Interview,Why use an executor instead of creating many threads manually?,It centralizes task execution and resource management and can reuse a controlled pool of worker threads.
+Q0972,Java,Medium,Technical,Exceptions,"In Java, which statement best answers: What does throws do?",It declares exceptions that a method may propagate to its caller.
+Q0973,C,Hard,Technical,Advanced,What is a union?,A user-defined type whose members share the same storage location.
+Q0974,CSS,Interview,Interview,Interview,"In CSS, which statement best answers: What is mobile-first CSS?",Starting with styles for smaller screens and progressively enhancing the layout for larger screens.
+Q0975,JavaScript,Hard,Technical,Runtime,"In JavaScript, which statement best answers: What is the event loop?",A runtime mechanism that coordinates execution of JavaScript jobs with task and microtask queues and host events.
+Q0976,Java,Medium,Technical,OOP,"In Java, which statement best answers: Does Java support multiple inheritance of classes?","No; a class can extend only one class, but it can implement multiple interfaces."
+Q0977,Python,Easy,Technical,Basics,What is indentation used for in Python?,It defines block structure.
+Q0978,C++,Medium,Technical,Modern C++,"In C++, which statement best answers: What is move semantics?",A mechanism that allows resources to be transferred from temporary or otherwise movable objects instead of copied.
+Q0979,C,Interview,Interview,Compilation,What is the role of the linker in a C build?,It combines object files and libraries and resolves external symbol references to create the final executable or library.
+Q0980,Python,Hard,Technical,Decorators,What is a decorator?,A callable that takes another callable and returns a modified or wrapped callable.
+Q0981,JavaScript,Easy,Technical,Basics,What is NaN?,A special numeric value representing an unrepresentable or undefined numeric result.
+Q0982,C++,Medium,Technical,STL,"In C++, which statement best answers: What is an iterator?",An object that provides a generalized way to traverse elements of a range or container.
+Q0983,Python,Easy,Technical,Basics,How do you create a tuple?,"Use parentheses or commas, for example (1, 2, 3)."
+Q0984,CSS,Easy,Technical,Box Model,"If an element has margin: 20px, what does that space represent?",Space outside the element's border.
+Q0985,C,Medium,Technical,Functions,What is recursion?,A function calling itself directly or indirectly until a terminating condition is reached.
+Q0986,C,Medium,Technical,Functions,What is a function prototype?,"A declaration that specifies a function's name, return type, and parameter types."
+Q0987,C,Medium,Technical,Memory,"In C, which statement best answers: What is a memory leak?",Allocated memory that is no longer reachable and therefore cannot be freed by the program.
+Q0988,CSS,Medium,Technical,Units,What is the difference between em and rem?,"em is relative to the relevant element's font size, while rem is relative to the root element's font size."
+Q0989,Python,Medium,Technical,Functions,"In Python, which statement best answers: What is a keyword argument?",An argument supplied using the parameter name.
+Q0990,C,Interview,Interview,Interview,"In C, which statement best answers: What is a segmentation fault?",A common operating-system signal caused by invalid memory access; it is not itself a C language construct.
+Q0991,CSS,Hard,Technical,Advanced,What is a cascade layer?,A mechanism for organizing declarations into explicit cascade layers with controlled precedence.
+Q0992,CSS,Hard,Technical,Architecture,"In CSS, which statement best answers: What is BEM?","A naming methodology using Block, Element, and Modifier concepts for maintainable CSS class names."
+Q0993,Java,Medium,Technical,Collections,What is an Iterator?,An object used to traverse collection elements through methods such as hasNext() and next().
+Q0994,Java,Easy,Technical,Access,Which access modifier is most restrictive?,private
+Q0995,Java,Easy,Technical,Basics,Which keyword refers to the current object?,this
+Q0996,HTML,Medium,Technical,Media,"In HTML, which statement best answers: Which element embeds audio content?",The audio element.
+Q0997,Java,Interview,Interview,Interview,How would you choose between HashMap and TreeMap?,Use HashMap for hash-based lookup without sorted ordering; use TreeMap when sorted key order or tree-based navigation is required.
+Q0998,Python,Easy,Technical,Basics,How do you create a list in Python?,"Use square brackets, for example [1, 2, 3]."
+Q0999,Java,Hard,Technical,Concurrency,"In Java, which statement best answers: What is volatile used for?","It provides visibility and ordering guarantees for accesses to a variable, but does not make compound operations such as increment atomic."
+Q1000,Java,Medium,Technical,Streams,"In Java, which statement best answers: What is the Java Stream API?","An API for declarative processing of sequences of elements through operations such as map, filter, and reduce."
